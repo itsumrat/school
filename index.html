@@ -63,81 +63,81 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar">
-                <div class="container">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#">About School</a></li>
-                      <li><a href="#">Teachers</a></li>
-                      <li><a href="#">Students</a></li>
-                      <li><a href="#">Gallery</a></li>
-                      <li><a href="#">Students</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
 
-        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-          <!-- Overlay -->
-          <div class="overlay"></div>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About School</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">Students</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Students</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-          <!-- Indicators -->
+        <!-- Slider -->
+        <div id="image-carousel" class="carousel slide" data-ride="carousel">
+
+          <!-- pager dots -->
           <ol class="carousel-indicators">
-            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#bs-carousel" data-slide-to="1"></li>
-            <li data-target="#bs-carousel" data-slide-to="2"></li>
+            <li data-target="#image-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel" data-slide-to="1"></li>
+            <li data-target="#image-carousel" data-slide-to="2"></li>
           </ol>
-          
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item slides active">
-              <div class="slide-1"></div>
-              <div class="hero">
-                <hgroup>
-                    <h1>Enter To Learn, Exit To Lead </h1>        
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+
+          <!-- image slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="assets/dist/img/slider.jpg" alt="">
+              <div class="carousel-caption">
+                <h1>Come to learn, leave for exit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
               </div>
             </div>
-            <div class="item slides">
-              <div class="slide-2"></div>
-              <div class="hero">        
-                <hgroup>
-                    <h1>Enter To Learn, Exit To Lead </h1>        
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-                </hgroup>       
-                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+
+            <div class="item">
+              <img src="assets/dist/img/slider2.jpeg" alt="">
+              <div class="carousel-caption">
+                <h1>Come to learn, leave for exit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
               </div>
             </div>
-            <div class="item slides">
-              <div class="slide-3"></div>
-              <div class="hero">        
-                <hgroup>
-                    <h1>Enter To Learn, Exit To Lead </h1>        
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+
+            <div class="item">
+              <img src="assets/dist/img/slider3.jpeg" alt="">
+              <div class="carousel-caption">
+                <h1>Come to learn, leave for exit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
               </div>
             </div>
-          </div> 
-          <div class="notice-home">
-            <h3>NOTICE BOARD</h3>
-              <ul>
-                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-              </ul>
+
           </div>
         </div>
+        <!-- End Slider -->
+
+        <!-- Notice Board -->
+        <div class="notice-slider">
+            <h4>notice board</h4>
+            <ul>
+                <li><a href="#">Consectetur Amet Egestas</a></li>
+                <li><a href="#">Consectetur Amet Egestas</a></li>
+                <li><a href="#">Consectetur Amet Egestas</a></li>
+                <li><a href="#">Consectetur Amet Egestas</a></li>
+                <li><a href="#">Consectetur Amet Egestas</a></li>
+            </ul>
+        </div>
+        <!-- End Notice Board -->
 
         <ul id="ticker01">
-            <li><a href="#">The first thing ...</a></li>
-            <li><a href="#">End up doing is ...</a></li>
-            <li><a href="#">The code that you ...</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
             <!-- eccetera -->
         </ul>
 
@@ -150,7 +150,7 @@
                         <h4>Prof Mr Hamidur Rahman</h4>
                         <h6>Founder</h6>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-                        <a href="#" class="btn btn-lg">read more</a>
+                        <a href="#" class="btn btn-lg btn-more">read more</a>
                     </div>
                 </div>
             </div>
