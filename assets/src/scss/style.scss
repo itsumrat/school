@@ -1,0 +1,27 @@
+/*!
+Theme Name: Ultimos
+Theme URI: http://schoolmars.com
+Author: Saddam Azad 
+Author URI: http://schoolmars.com
+Version: 0.0.1
+Description: 
+Licensed Commercial 
+Copyright 2015-2015 Saddam Azad
+*/
+
+@charset "utf-8";
+
+//Components
+@import "components/slider";
+@import "components/speech";
+@import "components/about-school";
+@import "components/about-us";
+
+// Layout
+@import "layout/body";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+// Shame
+@import "shame";

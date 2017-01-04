@@ -1,0 +1,49 @@
+#about-content {
+	
+	h3 {
+
+	}
+
+	h1 {
+		font-size: 40px;
+		color: #75C99C;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	.jcarousel {
+	    width: 85%;
+	    margin: 0 auto;
+
+	    ul {
+	    	text-align : center;
+
+	    	li {
+	    		img {
+	    			display: inline;
+	    			width: 100px;
+	    		}
+	    		h4 {
+
+	    		}
+	    	}
+	    }
+	}
+
+	.jcarousel-wrapper {
+		box-shadow: none;
+	}
+
+	.jcarousel img {
+	    border: 2px solid #75C99C;
+	    border-radius: 50%;
+	}
+
+	.jcarousel-pagination a {
+		background-color: #E7E7E7;
+	}
+
+	.jcarousel-pagination a.active {
+		background-color: #75C99C;
+	}
+}
