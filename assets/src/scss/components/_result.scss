@@ -1,0 +1,11 @@
+.result {
+		div.mdgov_OverflowTable {
+	    width: 100%;
+	    overflow: auto;
+	    -webkit-overflow-scrolling: touch;
+	}
+	div.mdgov_OverflowTable table {
+	    width: 100%;
+	    white-space: nowrap; /* Optional */
+	}
+}

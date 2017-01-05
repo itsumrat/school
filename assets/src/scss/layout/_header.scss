@@ -1,8 +1,14 @@
 header {
 	height: 100px;
 	padding: 20px 0;
-	img {
+	padding-top: 25px
 
+	img {
+		margin-top: -13px;
+	}
+
+	span {
+		font-size: 33px;
 	}
 	input {
 		outline: none;
@@ -18,15 +24,21 @@ header {
 		background: #f3f3f3 url(../img/search-icon.jpg) no-repeat 0px center;
 		border: solid 1px #ccc;
 		padding: 6px 10px 6px 55px;
-		width: 100px;
+		width: 180px;
 		//border-radius: 10em;
 		transition: all .5s;
 
 		&:focus {
-			width: 180px;
+			width: 250px;
 			background-color: #fff;
 			border-color: #66CC75;
 		}
 	}
+}
 
+@media screen and (max-width: 768px) {
+  header {
+    height: 140px;
+    text-align: center;
+  }
 }

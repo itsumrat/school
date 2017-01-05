@@ -1,5 +1,3 @@
-$primary: #B78140;
-
 .item img {
   width: 100%;
   height: 600px;
@@ -13,12 +11,12 @@ $primary: #B78140;
   
 //pager dot
 .carousel-indicators li {
-  border-color: $primary;
+  border-color: gray;
 }
   
 //active pager dot
 .carousel-indicators .active {
-  background-color: $primary;
+  background-color: #79CA9F;
 }
   
 .carousel-inner>.item>img {
@@ -28,9 +26,14 @@ $primary: #B78140;
 }
 
 .carousel-caption {
+  text-shadow: none;
+  text-align: left;
+
   h1 {
+    text-transform: capitalize;
     color: #79CA9F;
     font-size: 40px;
+    font-weight: bold;
   }
   p {
     color: #fff;
@@ -40,28 +43,39 @@ $primary: #B78140;
 
 @media screen and (min-width: 768px) {
   .carousel-caption {
-    left: 0;
-    bottom: 50%;
+    left: 9%;
+    bottom: 40%;
     width: 650px;
   }
 }
   
 .notice-slider {
   background-color: #79CA9F;
-  padding: 15px;
-  width: 230px;
+  //width: 230px;
   position: absolute;
   top: 40%;
-  right: 7%;
+  right: 6.6%;
+
+  h4 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #f4f4f4;
+  }
 
   ul {
     padding: 0;
     list-style: none;
 
     li {
-      padding: 7px 0;
-      border-top: 1px solid #f4f4f4;
-      border-bottom: 1px solid #f4f4f4;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      a {
+        padding: 25px;
+        font-size: 15px;
+        line-height: 2;
+      }
     }
   }
 }
