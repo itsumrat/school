@@ -369,6 +369,7 @@ header input[type=search]:focus {
   }
   header img {
     max-height: 63px;
+    margin: 0 auto;
   }
 }
 

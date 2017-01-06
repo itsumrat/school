@@ -62,4 +62,18 @@ jQuery(document).ready(function($){
 	});
 
 
+	// Remove carousel caption in smaller screen
+	 $(function () {
+        var isAdded = false;
+        $(window).resize(function () {
+            if (!isAdded && $(window).width() > 768) {
+                 isAdded = true;
+            } else if (isAdded && $(window).width() <= 768) {
+                isAdded = false;
+                $('.carousel-caption').remove();
+            }
+        });
+    });
+
+
 });
