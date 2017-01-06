@@ -13,3 +13,9 @@
 	color: #fff;
 	opacity: .5;
 }
+
+@media (min-width: 768px) {
+	.navbar-nav {
+	    height: 50px;
+	}
+}
