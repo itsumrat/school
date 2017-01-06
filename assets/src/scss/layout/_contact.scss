@@ -1,0 +1,23 @@
+#contact {
+	
+	.physical-address {
+
+	}
+
+	.contact-form {
+
+		.input-group-addon {
+			background-color: transparent;
+		}
+		input[type=text] {
+			width: 270px;
+			border-left: 0;
+			padding-left: 0;
+		}
+		input[type=email] {
+			width: 270px;
+			border-left: 0;
+			padding-left: 0;
+		}
+	}
+}
