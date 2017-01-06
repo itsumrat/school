@@ -361,6 +361,9 @@ header input[type=search]:focus {
     height: 140px;
     text-align: center;
   }
+  header span {
+    font-size: 25px;
+  }
 }
 
 footer {
