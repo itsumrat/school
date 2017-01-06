@@ -106,8 +106,10 @@ Copyright 2015-2015 Saddam Azad
 
 .tickercontainer {
   width: 100%;
+  height: 45px;
 }
 .tickercontainer .mask {
+  top: 15px; 
   width: 100%;
 }
 .tickercontainer .mask .newsticker a {
@@ -243,16 +245,48 @@ Copyright 2015-2015 Saddam Azad
   background-color: #75c99c;
 }
 
-div.mdgov_OverflowTable {
+#teacher-list table {
   width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  margin: 2em auto;
 }
 
-div.mdgov_OverflowTable table {
-  width: 100%;
-  white-space: nowrap;
-  /* Optional */
+#teacher-list thead {
+  color: #fff; 
+  background-color: #79ca9f;
+}
+#teacher-list thead th {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#teacher-list td {
+  width: 10em;
+  padding: .3em;
+}
+
+#teacher-list tbody {
+  background: #ccc;
+}
+
+#teacher-list div.pager {
+  margin: 1em 0; 
+  text-align: center;
+}
+
+#teacher-list div.pager span {
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  margin-right: .5em; 
+  line-height: 1.8;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #000;
+}
+
+#teacher-list div.pager span.active {
+  background: #c00;
 }
 
 .result div.mdgov_OverflowTable {
@@ -269,6 +303,9 @@ div.mdgov_OverflowTable table {
 
 .gallery {
   padding: 20px 30px;
+}
+.gallery h2 {
+  color: #555;
 }
 .gallery img {
   width: 350px;
@@ -350,4 +387,107 @@ footer ul li a:hover {
   color: #fff;
   text-decoration: none; 
   opacity: .5;
+}
+
+article {
+  width: 100%;
+}
+
+aside {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  overflow: scroll; 
+  background: #fff;
+}
+
+aside ul {
+  padding: 0 0 150px 0; 
+  margin: 0;
+}
+
+aside ul li {
+  padding: 20px 10px 20px 15px; 
+  font: 14px Arial;
+  list-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#fff));
+  background: -webkit-linear-gradient(#ddd, #fff);
+  background:      -o-linear-gradient(#ddd, #fff);
+  background:         linear-gradient(#ddd, #fff);
+}
+
+.content {
+  padding: 15px;
+  margin-left: 250px;
+
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .content {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    margin-left: -270px;
+    -webkit-transition: .2s linear;
+         -o-transition: .2s linear;
+            transition: .2s linear;
+  }
+  .menu-button {
+    display: block; 
+    float: right;
+    width: 32px;
+    height: 32px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(0deg, #222 0%, #222 50%, orange 50%);
+    background-image:      -o-linear-gradient(0deg, #222 0%, #222 50%, orange 50%);
+    background-image:         linear-gradient(90deg, #222 0%, #222 50%, orange 50%);
+    border-radius: 3px;
+    outline: none;
+
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .menu-button:checked {
+    background-image: -webkit-linear-gradient(0deg, orange 0%, orange 50%, #222 50%);
+    background-image:      -o-linear-gradient(0deg, orange 0%, orange 50%, #222 50%);
+    background-image:         linear-gradient(90deg, orange 0%, orange 50%, #222 50%);
+  }
+  .menu-button:checked ~ aside {
+    margin-left: 0;
+  }
+  .menu-button:checked ~ .content {
+    min-width: 500px; 
+    margin-left: 250px;
+  }
+  .aside:hover {
+    margin-left: 0;
+  }
+  .content {
+    margin-left: 0;
+    -webkit-transition: .2s linear;
+         -o-transition: .2s linear;
+            transition: .2s linear; 
+
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
 }
