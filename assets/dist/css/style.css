@@ -251,48 +251,8 @@ Copyright 2015-2015 Saddam Azad
   background-color: #75c99c;
 }
 
-#teacher-list table {
-  width: 100%;
-  margin: 2em auto;
-}
-
-#teacher-list thead {
-  color: #fff; 
-  background-color: #79ca9f;
-}
-#teacher-list thead th {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-#teacher-list td {
-  width: 10em;
-  padding: .3em;
-}
-
-#teacher-list tbody {
-  background: #ccc;
-}
-
-#teacher-list div.pager {
-  margin: 1em 0; 
-  text-align: center;
-}
-
-#teacher-list div.pager span {
-  display: inline-block;
-  width: 1.8em;
-  height: 1.8em;
-  margin-right: .5em; 
-  line-height: 1.8;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-  background: #000;
-}
-
-#teacher-list div.pager span.active {
-  background: #c00;
+#teacher-list .table-responsive {
+  height: 430px;
 }
 
 .result div.mdgov_OverflowTable {
