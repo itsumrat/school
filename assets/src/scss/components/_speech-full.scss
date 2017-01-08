@@ -1,14 +1,35 @@
 #speech-full {
-  article {
-    width: 70%;
-    float: left;
+  
+  img {
+    width: 250px;
+  }
 
-    .content {
-      max-width: 650px;
+}
+
+.notice-board {
+    background-color: #79CA9F;
+    //width: 230px;
+
+    h4 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+      border-bottom: 2px solid #f4f4f4;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        a {
+          padding: 25px;
+          font-size: 15px;
+          line-height: 2;
+        }
+      }
     }
   }
-
-  aside {
-    width: 20%;
-  }
-}
