@@ -1,15 +1,22 @@
 #about-summary {
-	padding: 50px 0;
+	padding: 60px 0;
 	background-color: #F7F8F8;
 
 	h1 {
+		font-family: 'Lato', sans-serif;
 		text-transform: capitalize;
-	    color: #79CA9F;
-	    font-size: 40px;
-	    font-weight: bold;
-	    padding-bottom: 20px;
+	    font-size: 48px;
+	    color: rgb(130, 202, 156);
+  		font-weight: bold;
+  		line-height: 0.583;
+	    padding-bottom: 30px;
 	}
-
+	p {
+		font-size: 15px;
+		font-family: 'Lato', sans-serif;
+		color: rgba(66, 66, 66, 0.749);
+		line-height: 2;
+	}
 	.btn-more {
 		border-radius: 32px;
     	padding: 15px 30px;
@@ -19,7 +26,8 @@
     	color: #fff;
     	background-color: #79CA9F;
     	box-shadow: 0 2px 40px 0 #E8E9E9;
-    	margin-top: 10px;
+    	margin-top: 20px;
+    	margin-bottom: 40px;
 
     	&:hover {
     		background-color: #fff;
@@ -33,11 +41,16 @@
 		margin-top: 20px;
 		margin-left: 20px;
 		width: 230px;
-		box-shadow: 0 2px 40px 0 #E8E9E9;
+		background-color: #fff;
+		box-shadow: 0 2px 40px 0 #ebecec;
 
 		h4 {
 			border-bottom: 1px solid #999;
-			text-align: center;
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			color: rgb(66, 66, 66);
+			line-height: 1.667;
+			text-transform: uppercase;
 		}
 
 		ul {

@@ -8,9 +8,6 @@ Description:
 Licensed Commercial 
 Copyright 2015-2015 Saddam Azad
 */
-.navbar {
-  margin-bottom: 15px !important;
-}
 .navbar .nav li a {
   padding: 10px 40px;
   padding-left: 0;
@@ -58,7 +55,7 @@ Copyright 2015-2015 Saddam Azad
 
 .carousel-inner > .item > img {
   width: 100%; 
-  height: 550px;
+  height: 650px;
   line-height: 1;
 }
 
@@ -67,13 +64,17 @@ Copyright 2015-2015 Saddam Azad
   text-shadow: none;
 }
 .carousel-caption h1 {
-  font-size: 40px;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
   font-weight: bold; 
-  color: #79ca9f;
+  color: #82ca9c;
   text-transform: capitalize;
 }
 .carousel-caption p {
-  font-size: 18px; 
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.667; 
   color: #fff;
 }
 
@@ -94,7 +95,8 @@ Copyright 2015-2015 Saddam Azad
 .notice-slider h4 {
   padding: 10px 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -113,7 +115,8 @@ Copyright 2015-2015 Saddam Azad
 .notice-slider ul li a {
   padding: 0 25px;
   margin: 0;
-  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
   line-height: 2.5;
   color: #fff;
 }
@@ -146,7 +149,9 @@ Copyright 2015-2015 Saddam Azad
   width: 100%;
 }
 .tickercontainer .mask .newsticker a {
-  color: #333;
+  font-family: 'Lato', sans-serif;
+  line-height: 2; 
+  color: rgba(66, 66, 66, .749);
 }
 
 .nopadding {
@@ -156,12 +161,13 @@ Copyright 2015-2015 Saddam Azad
 
 .update-text {
   height: 45px;
-  font-size: 18px;
-  line-height: 2.7;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 2.875;
   color: #fff;
   text-align: center;
   background-color: #58ac81;
-  border-top-right-radius: 60px;
+  border-top-right-radius: 32px;
 }
 
 #speech {
@@ -207,19 +213,28 @@ Copyright 2015-2015 Saddam Azad
 }
 
 #about-summary {
-  padding: 50px 0;
+  padding: 60px 0;
   background-color: #f7f8f8;
 }
 #about-summary h1 {
-  padding-bottom: 20px; 
-  font-size: 40px;
+  padding-bottom: 30px; 
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
   font-weight: bold;
-  color: #79ca9f;
+  line-height: .583;
+  color: #82ca9c;
   text-transform: capitalize;
+}
+#about-summary p {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 2; 
+  color: rgba(66, 66, 66, .749);
 }
 #about-summary .btn-more {
   padding: 15px 30px;
-  margin-top: 10px; 
+  margin-top: 20px;
+  margin-bottom: 40px; 
   font-size: 13px;
   line-height: 1;
   color: #fff;
@@ -239,11 +254,16 @@ Copyright 2015-2015 Saddam Azad
   padding: 20px 10px;
   margin-top: 20px;
   margin-left: 20px;
-  -webkit-box-shadow: 0 2px 40px 0 #e8e9e9;
-          box-shadow: 0 2px 40px 0 #e8e9e9;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 40px 0 #ebecec;
+          box-shadow: 0 2px 40px 0 #ebecec;
 }
 #about-summary .at-a-glance h4 {
-  text-align: center; 
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.667;
+  color: #424242;
+  text-transform: uppercase; 
   border-bottom: 1px solid #999;
 }
 #about-summary .at-a-glance ul {
@@ -260,46 +280,61 @@ Copyright 2015-2015 Saddam Azad
 }
 
 #way-of-teaching {
-  padding: 50px 0; 
+  padding: 90px 0; 
   text-align: center;
 }
 #way-of-teaching h1 {
-  padding-bottom: 30px; 
-  font-size: 40px;
+  padding-bottom: 90px; 
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  color: #79ca9f;
+  line-height: .36;
+  color: #82ca9c;
   text-transform: uppercase;
 }
 #way-of-teaching h4 {
   padding-top: 10px; 
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
   font-weight: bold;
-  color: #474747;
+  line-height: 1.4;
+  color: rgba(66, 66, 66, .902);
   text-transform: capitalize;
 }
 #way-of-teaching p {
-  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.867;
+  color: rgba(66, 66, 66, .749);
+  text-align: center;
 }
 
+#about-content {
+  padding-top: 30px;
+  padding-bottom: 90px; 
+  font-family: 'Lato', sans-serif;
+}
 #about-content h3 {
-  margin-top: 40px; 
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 1.889; 
+  color: rgba(66, 66, 66, .902);
 }
-
 #about-content p {
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 2.267;
+  color: rgba(66, 66, 66, .749);
+  text-align: left;
 }
-
 #about-content h1 {
   padding-top: 50px;
-  padding-bottom: 20px; 
-  font-size: 40px;
+  padding-bottom: 40px; 
+  font-size: 50px;
   font-weight: bold;
-  color: #75c99c;
+  line-height: .36;
+  color: #82ca9c;
   text-align: center;
   text-transform: capitalize;
 }
-
 #about-content .jcarousel {
   width: 85%;
   margin: 0 auto;
@@ -311,28 +346,41 @@ Copyright 2015-2015 Saddam Azad
   display: inline;
   width: 100px;
 }
-
+#about-content .jcarousel ul li h4 {
+  font-size: 15px;
+  line-height: 1.867;
+  color: #424242;
+  text-align: center;
+}
+#about-content .jcarousel ul li p {
+  padding: 0 10px; 
+  font-size: 15px;
+  line-height: 1.867;
+  color: rgba(66, 66, 66, .749);
+  text-align: center;
+}
 #about-content .jcarousel-wrapper {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
 #about-content .jcarousel img {
   border: 2px solid #75c99c;
   border-radius: 50%;
 }
-
 #about-content .jcarousel-pagination a {
   background-color: #e7e7e7;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
-
 #about-content .jcarousel-pagination a.active {
   background-color: #75c99c;
 }
 
 .jcarousel-control-prev, .jcarousel-control-next {
-  margin-top: 55px; 
+  margin-top: 55px;
   background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #teacher-list .table-responsive {
@@ -367,7 +415,6 @@ Copyright 2015-2015 Saddam Azad
  * 
  */
 .body-container {
-  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -418,14 +465,16 @@ header input[type=search]:focus {
 }
 
 footer {
-  padding: 30px 0 10px 0;
-  margin-top: 50px; 
+  padding: 30px 0 10px 0; 
   color: #fff;
   background-color: #3f3f3f;
 }
 footer h4 {
-  padding-bottom: 20px; 
-  color: #d3d3d3;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #f7f8f8;
+  text-transform: uppercase;
 }
 footer .logo {
   text-align: center;
@@ -445,6 +494,11 @@ footer ul li a:hover {
 }
 footer .copyright {
   display: initial;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  line-height: 2.5;
+  color: rgba(247, 248, 248, .8);
+  text-align: left;
 }
 footer .social-links {
   float: right;
@@ -514,11 +568,12 @@ footer hr {
 }
 
 #contact {
-  padding-top: 35px;
+  padding: 70px 0;
+  font-family: 'Lato', sans-serif;
 }
 #contact .physical-address {
   padding: 30px 55px 20px 45px;
-  margin-top: 40px;
+  margin-top: 60px;
   color: #666; 
   background-color: #f6f6f6;
 }
@@ -533,7 +588,7 @@ footer hr {
 }
 #contact .contact-form h2 {
   padding-bottom: 10px;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 1.5; 
   color: #666;
 }

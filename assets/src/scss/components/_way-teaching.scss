@@ -1,24 +1,32 @@
 #way-of-teaching {
 	text-align: center;
-	padding: 50px 0;
+	padding: 90px 0;
 
 	h1 {
+		font-size: 50px;
+		font-family: 'Lato', sans-serif;
+		color: rgb(130, 202, 156);
+		font-weight: bold;
 		text-transform: uppercase;
-	    color: #79CA9F;
-	    font-size: 40px;
-	    font-weight: bold;
-	    padding-bottom: 30px;
+		line-height: 0.36;
+		padding-bottom: 90px;
 	}
 
 	h4 {
-		font-size: 16px;
 		text-transform: capitalize;
-		color: #474747;
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+		color: rgba(66, 66, 66, 0.902);
 		font-weight: bold;
+		line-height: 1.4;
 		padding-top: 10px;
 	}
 
 	p {
-		padding: 10px;
+		font-size: 15px;
+		font-family: 'Lato', sans-serif;
+		color: rgba(66, 66, 66, 0.749);
+		line-height: 1.867;
+		text-align: center;
 	}
 }

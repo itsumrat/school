@@ -21,7 +21,7 @@
   
 .carousel-inner>.item>img {
   line-height: 1;
-  height: 550px;
+  height: 650px;
   width: 100%;
 }
 
@@ -30,14 +30,18 @@
   text-align: left;
 
   h1 {
+    font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    color: #79CA9F;
-    font-size: 40px;
+    color: rgb(130, 202, 156);
+    font-size: 50px;
+    padding-bottom: 20px;
     font-weight: bold;
   }
   p {
+    font-family: 'Lato', sans-serif;
     color: #fff;
     font-size: 18px;
+    line-height: 1.667;
   }
 }
 
@@ -51,15 +55,15 @@
   
 .notice-slider {
   background-color: #79CA9F;
-  //width: 230px;
   position: absolute;
   top: 40%;
   right: 1.75%;
 
   h4 {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #fff;
+    line-height: 1;
     text-align: center;
     padding: 10px 0;
     margin: 0;
@@ -77,9 +81,10 @@
         background-color: #58AC81;
       }
       a {
+        font-family: 'Lato', sans-serif;
         padding: 0 25px;
         margin: 0;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 2.5;
         color: #fff;
 

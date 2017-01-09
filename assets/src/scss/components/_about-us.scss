@@ -1,22 +1,30 @@
 #about-content {
+	font-family: 'Lato', sans-serif;
+	padding-top: 30px;
+	padding-bottom: 90px;
 	
 	h3 {
-		font-size: 22px;
-		margin-top: 40px;
+		font-size: 18px;
+		color: rgba(66, 66, 66, 0.902);
+		line-height: 1.889;
 	}
 
 	p {
-		font-size: 16px;
+		font-size: 15px;
+		color: rgba(66, 66, 66, 0.749);
+		line-height: 2.267;
+		text-align: left;
 	}
 
 	h1 {
-		font-size: 40px;
+		font-size: 50px;
+		color: rgb(130, 202, 156);
 		font-weight: bold;
-		color: #75C99C;
+		line-height: 0.36;
 		text-align: center;
 		text-transform: capitalize;
 		padding-top: 50px;
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 	}
 
 	.jcarousel {
@@ -32,7 +40,18 @@
 	    			width: 100px;
 	    		}
 	    		h4 {
+					font-size: 15px;
+					color: rgb(66, 66, 66);
+					line-height: 1.867;
+					text-align: center;
+	    		}
 
+	    		p {
+					font-size: 15px;
+					color: rgba(66, 66, 66, 0.749);
+					line-height: 1.867;
+					text-align: center;
+					padding: 0 10px;
 	    		}
 	    	}
 	    }
@@ -49,6 +68,7 @@
 
 	.jcarousel-pagination a {
 		background-color: #E7E7E7;
+		box-shadow: none;
 	}
 
 	.jcarousel-pagination a.active {
@@ -59,4 +79,5 @@
 .jcarousel-control-prev, .jcarousel-control-next {
 	background: transparent;
 	margin-top: 55px;
+	box-shadow: none;
 }
