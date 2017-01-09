@@ -468,6 +468,9 @@ footer hr {
 #speech-full .media .media-body .media-heading span {
   font-size: 14px;
 }
+#speech-full article {
+  padding-top: 15px;
+}
 #speech-full .notice-board {
   background-color: #79ca9f;
 }
@@ -499,6 +502,12 @@ footer hr {
 }
 #speech-full .notice-board ul li a:hover {
   text-decoration: none;
+}
+#speech-full .jcarousel {
+  text-align: center;
+}
+#speech-full .jcarousel img {
+  display: initial;
 }
 
 #contact .contact-form .input-group-addon {

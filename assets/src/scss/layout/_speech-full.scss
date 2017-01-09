@@ -19,6 +19,10 @@
     }
   }
 
+  article {
+    padding-top: 15px;
+  }
+
   .notice-board {
     background-color: #79CA9F;
 
@@ -54,6 +58,13 @@
           }
         }
       }
+    }
+  }
+
+  .jcarousel {
+    text-align: center;
+    img {
+      display: initial;
     }
   }
 
