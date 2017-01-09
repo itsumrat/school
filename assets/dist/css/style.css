@@ -8,6 +8,9 @@ Description:
 Licensed Commercial 
 Copyright 2015-2015 Saddam Azad
 */
+.navbar {
+  margin-bottom: 15px !important;
+}
 .navbar .nav li a {
   padding: 10px 40px;
   padding-left: 0;
@@ -510,18 +513,68 @@ footer hr {
   display: initial;
 }
 
-#contact .contact-form .input-group-addon {
-  background-color: transparent;
+#contact {
+  padding-top: 35px;
 }
-
+#contact .physical-address {
+  padding: 30px 55px 20px 45px;
+  margin-top: 40px;
+  color: #666; 
+  background-color: #f6f6f6;
+}
+#contact .physical-address h4 {
+  font-size: 22px;
+}
+#contact .physical-address address {
+  font-size: 17px;
+}
+#contact .physical-address hr {
+  border: 1px solid #79ca9f;
+}
+#contact .contact-form h2 {
+  padding-bottom: 10px;
+  font-size: 35px;
+  line-height: 1.5; 
+  color: #666;
+}
+#contact .contact-form h2 span {
+  color: #79ca9f;
+}
+#contact .contact-form .input-group-addon {
+  color: #999;
+  background-color: #f6f6f6;
+}
 #contact .contact-form input[type=text] {
   width: 270px;
-  padding-left: 0; 
+  height: 45px;
+  padding-left: 0;
+  background-color: #f6f6f6; 
   border-left: 0;
 }
-
 #contact .contact-form input[type=email] {
   width: 270px;
-  padding-left: 0; 
+  height: 45px;
+  padding-left: 0;
+  background-color: #f6f6f6; 
   border-left: 0;
+}
+#contact .contact-form textarea {
+  width: 622px;
+  min-height: 200px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #f6f6f6;
+}
+#contact .contact-form button[type=submit] {
+  padding: 12px 55px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: #79ca9f;
+  border: 0; 
+  border-radius: 32px;
+}
+#contact .contact-form button[type=submit]:hover {
+  outline: 0;
 }

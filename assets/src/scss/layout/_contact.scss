@@ -1,23 +1,75 @@
 #contact {
-	
-	.physical-address {
+	padding-top: 35px;
 
+	.physical-address {
+		padding: 30px 55px 20px 45px;
+	    margin-top: 40px;
+	    background-color: #f6f6f6;
+	    color: #666;
+
+		h4 {
+			font-size: 22px;
+		}
+
+		address {
+			font-size: 17px;
+		}
+		hr {
+			border: 1px solid #79CA9F;
+		}
 	}
 
 	.contact-form {
+		h2 {
+			font-size: 35px;
+		    color: #666;
+		    padding-bottom: 10px;
+		    line-height: 1.5;
+		    span {
+				color: #79CA9F;
+			}			
+		}
 
 		.input-group-addon {
-			background-color: transparent;
+			color: #999;
+			background-color: #F6F6F6;
 		}
 		input[type=text] {
 			width: 270px;
+			height: 45px;
 			border-left: 0;
 			padding-left: 0;
+			background-color: #F6F6F6;
 		}
 		input[type=email] {
 			width: 270px;
+			height: 45px;
 			border-left: 0;
 			padding-left: 0;
+			background-color: #F6F6F6;
+		}
+
+		textarea {
+			width: 622px;
+			min-height: 200px;
+			margin-top: 10px;
+			margin-bottom: 15px;
+			background-color: #F6F6F6;
+		}
+
+		button[type=submit] {
+			font-size: 20px;
+			color: #fff;
+			letter-spacing: 3px;
+			padding: 12px 55px;
+			text-transform: uppercase;
+			background-color: #79CA9F;
+			border-radius: 32px;
+			border: 0;
+
+			&:hover {
+				outline: 0;
+			}
 		}
 	}
 }
