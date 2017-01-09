@@ -134,7 +134,8 @@ Copyright 2015-2015 Saddam Azad
   width: 100%;
   height: 45px;
   border: 1px solid #f4f4f4;
-  border-top: 0;
+  border-top: 0; 
+  border-left: 0;
 }
 .tickercontainer .mask {
   top: 15px;
@@ -153,7 +154,7 @@ Copyright 2015-2015 Saddam Azad
 .update-text {
   height: 45px;
   font-size: 18px;
-  line-height: 2.5;
+  line-height: 2.7;
   color: #fff;
   text-align: center;
   background-color: #58ac81;
@@ -277,8 +278,20 @@ Copyright 2015-2015 Saddam Azad
   padding: 10px;
 }
 
+#about-content h3 {
+  margin-top: 40px; 
+  font-size: 22px;
+}
+
+#about-content p {
+  font-size: 16px;
+}
+
 #about-content h1 {
+  padding-top: 50px;
+  padding-bottom: 20px; 
   font-size: 40px;
+  font-weight: bold;
   color: #75c99c;
   text-align: center;
   text-transform: capitalize;
@@ -312,6 +325,11 @@ Copyright 2015-2015 Saddam Azad
 
 #about-content .jcarousel-pagination a.active {
   background-color: #75c99c;
+}
+
+.jcarousel-control-prev, .jcarousel-control-next {
+  margin-top: 55px; 
+  background: transparent;
 }
 
 #teacher-list .table-responsive {
@@ -397,7 +415,7 @@ header input[type=search]:focus {
 }
 
 footer {
-  padding: 30px 0;
+  padding: 30px 0 10px 0;
   margin-top: 50px; 
   color: #fff;
   background-color: #3f3f3f;
@@ -422,108 +440,65 @@ footer ul li a:hover {
   text-decoration: none; 
   opacity: .5;
 }
-
-article {
-  width: 100%;
+footer .copyright {
+  display: initial;
+}
+footer .social-links {
+  float: right;
+}
+footer .social-links ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+footer .social-links ul li:first-child {
+  padding-right: 10px;
+}
+footer hr {
+  border-top: 1px solid #999;
 }
 
-aside {
-  position: fixed;
+#speech-full {
+  padding: 80px 0;
+}
+#speech-full .media .media-left img {
   width: 250px;
-  height: 100%;
-  overflow: scroll; 
-  background: #fff;
 }
-
-aside ul {
-  padding: 0 0 150px 0; 
+#speech-full .media .media-body .media-heading span {
+  font-size: 14px;
+}
+#speech-full .notice-board {
+  background-color: #79ca9f;
+}
+#speech-full .notice-board h4 {
+  padding: 10px 0;
   margin: 0;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
 }
-
-aside ul li {
-  padding: 20px 10px 20px 15px; 
-  font: 14px Arial;
+#speech-full .notice-board ul {
+  padding: 0;
   list-style: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#fff));
-  background: -webkit-linear-gradient(#ddd, #fff);
-  background:      -o-linear-gradient(#ddd, #fff);
-  background:         linear-gradient(#ddd, #fff);
 }
-
-.content {
-  padding: 15px;
-  margin-left: 250px;
-
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+#speech-full .notice-board ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
-
-.menu-button {
-  display: none;
+#speech-full .notice-board ul li:hover {
+  background-color: #58ac81;
 }
-
-@media only screen and (max-width: 992px) {
-  .content {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-  }
+#speech-full .notice-board ul li a {
+  padding: 0 25px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.5;
+  color: #fff;
 }
-
-@media only screen and (max-width: 768px) {
-  aside {
-    margin-left: -270px;
-    -webkit-transition: .2s linear;
-         -o-transition: .2s linear;
-            transition: .2s linear;
-  }
-  .menu-button {
-    display: block; 
-    float: right;
-    width: 32px;
-    height: 32px;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    -webkit-appearance: none;
-    cursor: pointer;
-    background-image: -webkit-linear-gradient(0deg, #222 0%, #222 50%, orange 50%);
-    background-image:      -o-linear-gradient(0deg, #222 0%, #222 50%, orange 50%);
-    background-image:         linear-gradient(90deg, #222 0%, #222 50%, orange 50%);
-    border-radius: 3px;
-    outline: none;
-
-       -moz-appearance: none;
-            appearance: none;
-  }
-  .menu-button:checked {
-    background-image: -webkit-linear-gradient(0deg, orange 0%, orange 50%, #222 50%);
-    background-image:      -o-linear-gradient(0deg, orange 0%, orange 50%, #222 50%);
-    background-image:         linear-gradient(90deg, orange 0%, orange 50%, #222 50%);
-  }
-  .menu-button:checked ~ aside {
-    margin-left: 0;
-  }
-  .menu-button:checked ~ .content {
-    min-width: 500px; 
-    margin-left: 250px;
-  }
-  .aside:hover {
-    margin-left: 0;
-  }
-  .content {
-    margin-left: 0;
-    -webkit-transition: .2s linear;
-         -o-transition: .2s linear;
-            transition: .2s linear; 
-
-    -webkit-column-count: 1;
-       -moz-column-count: 1;
-            column-count: 1;
-  }
+#speech-full .notice-board ul li a:hover {
+  text-decoration: none;
 }
 
 #contact .contact-form .input-group-addon {
