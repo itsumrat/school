@@ -1,15 +1,33 @@
 .tickercontainer {
 	width: 100%;
 	height: 45px;
+	border: 1px solid #f4f4f4;
+	border-top: 0;
 
 	.mask {
 		width: 100%;
 		top: 15px;
+		left: 0;
 
 		.newsticker {
 			a {
-				color: #000;
+				color: #333;
 			}
 		}
 	}
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.update-text {
+	height: 45px;
+    text-align: center;
+    background-color: #58ac81;
+    line-height: 2.5;
+    font-size: 18px;
+    color: #fff;
+    border-top-right-radius: 60px;
 }

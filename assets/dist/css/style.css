@@ -9,13 +9,24 @@ Licensed Commercial
 Copyright 2015-2015 Saddam Azad
 */
 .navbar .nav li a {
+  padding: 10px 40px;
+  padding-left: 0;
+  line-height: 1.7; 
   color: #fff;
+}
+
+.navbar-default {
+  border: 0;
 }
 
 .navbar-default .navbar-nav > .active > a {
   color: #fff;
   background-color: transparent;
   opacity: .5;
+}
+
+.collapse.navbar-collapse {
+  padding-left: 0;
 }
 
 @media (min-width: 768px) {
@@ -74,16 +85,17 @@ Copyright 2015-2015 Saddam Azad
 .notice-slider {
   position: absolute;
   top: 40%;
-  right: 6.6%; 
+  right: 1.75%; 
   background-color: #79ca9f;
 }
 .notice-slider h4 {
-  padding-bottom: 5px;
-  margin-bottom: 0;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 16px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 1px solid #fff;
 }
 .notice-slider ul {
   padding: 0;
@@ -92,10 +104,18 @@ Copyright 2015-2015 Saddam Azad
 .notice-slider ul li {
   border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
+.notice-slider ul li:hover {
+  background-color: #58ac81;
+}
 .notice-slider ul li a {
-  padding: 25px;
-  font-size: 15px;
-  line-height: 2;
+  padding: 0 25px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.5;
+  color: #fff;
+}
+.notice-slider ul li a:hover {
+  text-decoration: none;
 }
 
 .navbar {
@@ -113,31 +133,62 @@ Copyright 2015-2015 Saddam Azad
 .tickercontainer {
   width: 100%;
   height: 45px;
+  border: 1px solid #f4f4f4;
+  border-top: 0;
 }
 .tickercontainer .mask {
-  top: 15px; 
+  top: 15px;
+  left: 0; 
   width: 100%;
 }
 .tickercontainer .mask .newsticker a {
-  color: #000;
+  color: #333;
 }
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.update-text {
+  height: 45px;
+  font-size: 18px;
+  line-height: 2.5;
+  color: #fff;
+  text-align: center;
+  background-color: #58ac81;
+  border-top-right-radius: 60px;
+}
+
+#speech {
+  padding: 80px 0;
+}
 #speech h1 {
-  color: #79ca9f; 
+  padding-bottom: 5px; 
+  color: #79ca9f;
   text-align: center;
   text-transform: capitalize;
 }
-
 #speech h5 {
+  padding-bottom: 50px; 
   text-align: center;
 }
-
-#speech img {
+#speech .speech-div img {
   width: 150px;
   height: 130px;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
-
-#speech .btn-more {
+#speech .speech-div h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+#speech .speech-div p {
+  padding-right: 45px;
+  padding-bottom: 15px;
+}
+#speech .speech-div .btn-more {
   padding: 8px 20px;
   font-size: 13px;
   line-height: 1;
@@ -146,13 +197,14 @@ Copyright 2015-2015 Saddam Azad
   border: 1px solid #79ca9f;
   border-radius: 32px;
 }
-#speech .btn-more:hover {
+#speech .speech-div .btn-more:hover {
   color: #fff; 
   background-color: #79ca9f;
 }
 
 #about-summary {
-  padding: 100px 0;
+  padding: 50px 0;
+  background-color: #f7f8f8;
 }
 #about-summary h1 {
   padding-bottom: 20px; 
@@ -163,12 +215,15 @@ Copyright 2015-2015 Saddam Azad
 }
 #about-summary .btn-more {
   padding: 15px 30px;
+  margin-top: 10px; 
   font-size: 13px;
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
-  background-color: #79ca9f; 
+  background-color: #79ca9f;
   border-radius: 32px;
+  -webkit-box-shadow: 0 2px 40px 0 #e8e9e9;
+          box-shadow: 0 2px 40px 0 #e8e9e9;
 }
 #about-summary .btn-more:hover {
   color: #79ca9f;
@@ -180,8 +235,8 @@ Copyright 2015-2015 Saddam Azad
   padding: 20px 10px;
   margin-top: 20px;
   margin-left: 20px;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+  -webkit-box-shadow: 0 2px 40px 0 #e8e9e9;
+          box-shadow: 0 2px 40px 0 #e8e9e9;
 }
 #about-summary .at-a-glance h4 {
   text-align: center; 
@@ -191,12 +246,17 @@ Copyright 2015-2015 Saddam Azad
   padding-left: 0;
   list-style: none;
 }
+#about-summary .at-a-glance ul li {
+  color: #b9b7b7;
+}
 #about-summary .at-a-glance ul li span {
+  font-size: 12px;
   font-weight: bold;
+  color: #777;
 }
 
 #way-of-teaching {
-  padding: 100px 0; 
+  padding: 50px 0; 
   text-align: center;
 }
 #way-of-teaching h1 {
@@ -207,7 +267,10 @@ Copyright 2015-2015 Saddam Azad
   text-transform: uppercase;
 }
 #way-of-teaching h4 {
-  font-weight: bold; 
+  padding-top: 10px; 
+  font-size: 16px;
+  font-weight: bold;
+  color: #474747;
   text-transform: capitalize;
 }
 #way-of-teaching p {
@@ -337,10 +400,11 @@ footer {
   padding: 30px 0;
   margin-top: 50px; 
   color: #fff;
-  background-color: #222;
+  background-color: #3f3f3f;
 }
 footer h4 {
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
+  color: #d3d3d3;
 }
 footer .logo {
   text-align: center;
@@ -351,7 +415,7 @@ footer ul {
 }
 footer ul li a {
   line-height: 1; 
-  color: #fff;
+  color: #dadbdb;
 }
 footer ul li a:hover {
   color: #fff;

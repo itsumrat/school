@@ -3,15 +3,26 @@
 		li {
 		   a {
 			 color: #fff;
+			 padding: 10px 40px;
+    		 padding-left: 0;
+    		 line-height: 1.7;
 		   }
 		}
 	}
+}
+
+.navbar-default {
+	border: 0;
 }
 
 .navbar-default .navbar-nav>.active>a {
 	background-color: transparent;
 	color: #fff;
 	opacity: .5;
+}
+
+.collapse.navbar-collapse {
+    padding-left: 0;
 }
 
 @media (min-width: 768px) {
