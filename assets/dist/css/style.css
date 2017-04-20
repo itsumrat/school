@@ -1,5 +1,5 @@
 /*!
-Theme Name: Ultimos
+Theme Name: School
 Theme URI: http://schoolmars.com
 Author: Saddam Azad 
 Author URI: http://schoolmars.com
@@ -319,6 +319,88 @@ Copyright 2015-2015 Saddam Azad
   text-align: center;
 }
 
+.month {
+  width: 100%;
+  padding: 20px;
+  background-color: #82ca9c;
+}
+.month ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.month ul li {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  padding: 10px 0;
+  margin: 0;
+  background-color: #ddd;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  margin: 0; 
+  background: #eee;
+}
+.days li {
+  display: inline-block;
+  width: 13.6%;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777; 
+  text-align: center;
+  list-style-type: none;
+}
+.days li .active {
+  padding: 5px;
+  color: white !important; 
+  background: #1abc9c;
+  border-radius: 50%;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li, .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {
+    width: 12.2%;
+  }
+}
+
 #about-content {
   padding-top: 30px;
   padding-bottom: 90px; 
@@ -420,6 +502,28 @@ Copyright 2015-2015 Saddam Azad
   height: 300px;
 }
 
+.news .title {
+  padding: 10px 0;
+  color: #fff;
+  text-align: center; 
+  background-color: #82ca9c;
+}
+
+.news ul {
+  padding-left: 0; 
+  list-style: none;
+}
+.news ul li {
+  padding: 5px 0 5px 10px;
+}
+.news ul li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400; 
+  line-height: 1.867;
+  color: rgba(66, 66, 66, .749);
+}
+
 /*
  * Default
  * 
@@ -442,6 +546,7 @@ header input {
   outline: none;
 }
 header input[type=search] {
+  display: inline-block; 
   -webkit-box-sizing: content-box;
   -webkit-appearance: textfield;
   margin-top: 10px;
@@ -449,18 +554,47 @@ header input[type=search] {
   font-size: 100%;
 }
 header input[type=search] {
-  width: 180px;
+  width: 180px; 
   padding: 6px 10px 6px 55px;
   background: #f3f3f3 url(../img/search-icon.jpg) no-repeat 0 center;
   border: solid 1px #ccc;
-  -webkit-transition: all .5s;
-       -o-transition: all .5s;
-          transition: all .5s;
 }
-header input[type=search]:focus {
-  width: 250px;
-  background-color: #fff;
-  border-color: #66cc75;
+header #menuLogin {
+  display: inline-block;
+  padding: 7px 10px; 
+  font-weight: bold;
+  background-color: #82ca9c;
+}
+header #menuLogin a {
+  color: #fff;
+}
+header #menuLogin a:hover {
+  text-decoration: none;
+}
+header #menuLogin .dropdown-menu {
+  left: -175px;
+  margin: 0;
+  border-radius: 0;
+}
+header input {
+  padding: 7px; 
+  margin-bottom: 15px;
+  border: 1px solid #82ca9c;
+}
+header .btn {
+  padding: 7px 40px;
+  margin: 0 auto; 
+  font-weight: bold;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid #82ca9c;
+  border-radius: 0;
+}
+header .btn:hover {
+  color: #333;
+}
+header .btn:focus {
+  outline: 0;
 }
 
 @media screen and (max-width: 768px) {
