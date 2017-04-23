@@ -9,6 +9,12 @@
     		 line-height: 1.7;
 		   }
 		}
+
+		.dropdown-menu {
+			background-color: #82ca9c;
+			border: 0;
+			border-radius: 0;
+		}
 	}
 }
 
@@ -20,6 +26,11 @@
 	background-color: transparent;
 	color: #fff;
 	opacity: .5;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: inherit;
+    background-color: inherit;
 }
 
 .collapse.navbar-collapse {

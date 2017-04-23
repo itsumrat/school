@@ -9,10 +9,13 @@
         list-style: none;
 
         li {
-            color: white;
-            font-size: 20px;
             text-transform: uppercase;
             letter-spacing: 3px;
+            font-size: 22.517px;
+            font-family: "Roboto";
+            color: rgb(255, 255, 255);
+            line-height: 1.51;
+            text-align: center;
         }
     }
 }
@@ -42,7 +45,7 @@
 
 .days {
     padding: 10px 0;
-    background: #eee;
+    background: #fff;
     margin: 0;
 
     li {
@@ -51,7 +54,7 @@
         width: 13.6%;
         text-align: center;
         margin-bottom: 5px;
-        font-size:12px;
+        font-size: 16px;
         color: #777;
 
         .active {

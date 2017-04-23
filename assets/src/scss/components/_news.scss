@@ -1,9 +1,14 @@
-.news {
+.news-home {
+	font-family: 'Lato', sans-serif;
+
 	.title {
-		background-color: #82ca9c;
-		color: #fff;
-		padding: 10px 0;
+	    font-size: 30px;
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+		line-height: 1.433;
 		text-align: center;
+		background-color: #82ca9c;
+		padding: 3px;
 	}
 
 	ul {
@@ -14,12 +19,220 @@
 			padding: 5px 0 5px 10px;
 
 			a {
-				font-family: 'Lato', sans-serif;
-			    font-size: 15px;
-			    line-height: 1.867;
-			    color: rgba(66, 66, 66, .749);
-			    font-weight: 400;
+				font-size: 20px;
+				color: rgb(119, 119, 119);
+				line-height: 1.792;
+				text-align: left;
 			}
+		}
+	}
+}
+
+// News & Blog Page
+
+#news {
+	.news-div {
+		border: 1px solid rgb(215, 215, 215);
+		margin-bottom: 20px;
+
+		h1 {
+			font-size: 24px;
+			font-family: 'Lato', sans-serif;
+			color: rgba(66, 66, 66, 0.902);
+			text-transform: uppercase;
+			line-height: 1.417;
+			text-align: left;
+			padding: 10px;
+			margin: 0;
+			border-bottom: 1px solid rgb(215, 215, 215); 
+		}
+
+		.date,
+		.publisher {
+			font-size: 12px;
+			font-family: 'Lato', sans-serif;
+			color: rgb(102, 102, 102);
+			line-height: 2.833;
+			text-align: left;
+			padding: 10px;
+		}
+
+		.featured-img {
+			width: 100%;
+			height: 300px;
+			padding: 0 10px 10px 10px;
+		}
+
+		p {
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			color: rgb(102, 102, 102);
+			line-height: 1.3;
+			text-align: justify;
+			padding: 0 10px;
+			margin: 0;
+		}
+
+		.btn-more {
+			border-radius: 32px;
+	    	padding: 8px 20px;
+	    	text-transform: uppercase;
+	    	font-size: 13px;
+	    	line-height: 1;
+	    	border: 1px solid #79CA9F;
+	    	color: #79CA9F;
+	    	float: right;
+
+	    	&:hover {
+	    		background-color: #79CA9F;
+	    		color: #fff;
+	    	}
+		}
+
+		nav {
+			text-align: center;
+
+			.pagination>li>a {
+				border: 0;
+			}
+
+			.pagination>li>a:first-of-type,
+			.pagination>li>a:last-of-type {
+				background-color: #79CA9F;
+			}
+		}
+	}
+}
+
+.news-sidebar {
+	.sidebar-notice {
+		background-color: #79CA9F;
+
+		h4 {
+			margin-bottom: 0;
+
+			a {
+			  display: block;
+			  font-size: 18px;
+			  text-transform: uppercase;
+			  color: #fff;
+			  line-height: 1;
+			  text-align: center;
+			  padding: 10px 0;
+			  margin: 0;
+			  border-bottom: 1px solid #fff;
+			}
+		}
+
+		ul {
+			padding: 0;
+			list-style: none;
+
+			li {
+			  border-bottom: 1px solid rgba(255,255,255,0.5);
+
+			  &:hover {
+			    background-color: #58AC81;
+			  }
+			  a {
+			    font-family: 'Lato', sans-serif;
+			    padding: 0 25px;
+			    margin: 0;
+			    font-size: 13px;
+			    line-height: 2.5;
+			    color: #fff;
+
+			    &:hover {
+			      text-decoration: none;
+			    }
+			  }
+			}
+		}
+	}
+	.tags {
+		border: 1px solid rgb(215, 215, 215);
+		padding-bottom: 10px;
+
+		h3 {
+			background-color: #79CA9F;
+			margin: 0;
+			font-size: 24px;
+			font-family: 'Lato', sans-serif;
+			color: rgb(255, 255, 255);
+			line-height: 0.75;
+			text-align: center;
+			padding: 10px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+
+		span {
+			font-family: 'Lato', sans-serif;
+		    padding: 0 5px;
+		    margin: 0;
+		    font-size: 16px;
+			color: rgb(158, 158, 158);
+			line-height: 1.375;
+
+		    &:hover {
+		       text-decoration: none;
+		       background-color: #79CA9F;
+	    	   color: #fff;
+	    	   border-radius: 32px;
+	    	   padding: 3px 8px;
+	    	   cursor: pointer;
+		    }
+		}
+	}
+}
+
+// Single News
+#single-news {
+	.single-news {
+		border: 1px solid rgb(215, 215, 215);
+		margin-bottom: 20px;
+
+		h1 {
+			font-size: 24px;
+			font-family: 'Lato', sans-serif;
+			color: rgba(66, 66, 66, 0.902);
+			text-transform: uppercase;
+			line-height: 1.417;
+			text-align: left;
+			padding: 10px;
+			margin: 0;
+			border-bottom: 1px solid rgb(215, 215, 215); 
+		}
+
+		.date,
+		.publisher {
+			font-size: 12px;
+			font-family: 'Lato', sans-serif;
+			color: rgb(102, 102, 102);
+			line-height: 2.833;
+			text-align: left;
+			padding: 10px;
+		}
+
+		.featured-img {
+			width: 100%;
+			max-height: 600px;
+			padding: 0 10px 10px 10px;
+		}
+
+		.img-responsive {
+			width: 100%;
+			padding: 10px;
+		}
+
+		p {
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			color: rgb(102, 102, 102);
+			line-height: 1.3;
+			text-align: justify;
+			padding: 0 10px;
+			margin: 0;
 		}
 	}
 }
