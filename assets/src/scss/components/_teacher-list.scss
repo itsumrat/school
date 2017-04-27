@@ -1,6 +1,23 @@
 #teacher-list {
 	.table-responsive {
-		height: 430px;
+
+		#myTable {
+			tr {
+				td {
+					img {
+						width: 100px;
+						height: 125px;
+						display: inline-block;
+					}
+					.name {
+						display: inline-block;
+					}
+					.designation {
+						
+					}
+				}
+			}
+		}
 	}
 }
 

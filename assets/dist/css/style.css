@@ -490,8 +490,14 @@ Copyright 2017-2017 Hussain Sumrat
           box-shadow: none;
 }
 
-#teacher-list .table-responsive {
-  height: 430px;
+#teacher-list .table-responsive #myTable tr td img {
+  display: inline-block; 
+  width: 100px;
+  height: 125px;
+}
+
+#teacher-list .table-responsive #myTable tr td .name {
+  display: inline-block;
 }
 
 .result div.mdgov_OverflowTable {
