@@ -577,6 +577,7 @@ Copyright 2017-2017 Hussain Sumrat
 }
 
 #news .news-div {
+  padding-bottom: 35px;
   margin-bottom: 20px; 
   border: 1px solid #d7d7d7;
 }
@@ -625,7 +626,8 @@ Copyright 2017-2017 Hussain Sumrat
   border-radius: 32px;
 }
 #news .news-div .btn-more:hover {
-  color: #fff; 
+  color: #fff;
+  text-decoration: none; 
   background-color: #79ca9f;
 }
 #news .news-div nav {

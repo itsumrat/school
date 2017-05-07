@@ -1,0 +1,60 @@
+$green: #379970;
+$dark-green: #1d523c;
+
+#job-container{
+	margin-top: 30px;
+	.back{
+		background-color: $light-green;
+		border-color: $dark-green;
+		margin: 20px;
+		&:hover{
+			background: $dark-green;
+		}
+	}
+}
+
+.card-header{
+	background-color: $dark-green;
+	color: #fff;
+}
+.card{
+	border-color: $dark-green;
+}
+
+dt{
+	text-align: right !important;
+}
+
+#job-list{
+	tr{
+		font-size: 0.8em;		
+	}
+}
+td.link {
+ text-align: center;
+}
+thead{
+	background-color: $green;
+	color: #fff;
+	th{
+		border-color: $dark-green !important;
+	}
+}
+tbody{
+	td{
+		border-color: $dark-green !important;
+	}
+	i{
+		color: $green;
+		&:hover{
+			color: $dark-green;
+		}
+	}
+}
+.page-link{
+	color: $green;
+	&:hover{
+		color: $dark-green;
+	}
+
+}

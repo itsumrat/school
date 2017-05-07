@@ -39,11 +39,12 @@
     <meta property="og:audio" content="">
     <meta property="og:video" content="">
 
-    <title>School</title>
+    <title>Job List</title>
 	
 	<link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/vendor/jquery-scroller/li-scroller.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/jcarousel/examples/responsive/jcarousel.responsive.css">
     <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" />
 </head>
 
@@ -86,7 +87,7 @@
                   <li><a href="teacher-list.html">Teachers</a></li>
                   <li><a href="result.html">Students</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="#">Students</a></li>
+                  <li><a href="result.html">Students</a></li>
                   <li><a href="contact.html">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -97,9 +98,7 @@
         <!-- Ticker -->
         <div class="container">
             <div class="row">
-                <div class="col-md-2 nopadding update-text">UPDATES &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-10 nopadding">
+                <div class="col-md-12">
                     <ul id="ticker01">
                         <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
                         <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
@@ -113,124 +112,85 @@
         </div>
         <!-- End Ticker -->
 
-        <!-- Result -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="result">
-                        <h1>Examination result</h1>
-                        <div id="form">
-                            <form action="" method="post" name="registration" class="register">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <label for="Student">Exam Type</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Student">Shift Type</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Student">Medium Type</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Student">Exam Year</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Student">Class</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Student">Group</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="Student">Section</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="roll">Roll</label>
-                                        <input class="form-control" name="roll" type="text" />
-                                    </div>
-                                    <input type="button" class="btn" value="Show Result" />
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                  <th>Subject Name</th>
-                                  <th>Obtained Marks</th>
-                                  <th>Full Marks</th>
-                                  <th>GPA</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                  <th scope="row">Bangla</th>
-                                  <td>80</td>
-                                  <td>100</td>
-                                  <td>A+</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">English</th>
-                                  <td>80</td>
-                                  <td>100</td>
-                                  <td>A+</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">Mathematics</th>
-                                  <td>80</td>
-                                  <td>100</td>
-                                  <td>A+</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+          <!-- Job List -->
+
+          <div id="job-container">
+          <div class="container">
+            <div id="job-list">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                <th>Sl</th>
+                <th>Title</th>
+                <th>Position</th>
+                <th>Vacancy</th>
+                <th>Salary</th>
+                <th>Age</th>
+                <th>Qualification</th>
+                <th>Date</th>
+                <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                <td>1</td>
+                <td>Head Master Needed</td>
+                <td> Head Master</td>
+                <td> 1 </td>
+                <td> 100k to 200k </td>
+                <td> Above 90 </td>
+                <td> MIT Gradualte </td>
+                <td> 19 May 2017 </td>
+                <td class="link"><a href="#"><i class="im im-info"></i></a></td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Ast. Head Master Needed</td>
+                <td>Ast. Head Master</td>
+                <td> 1 </td>
+                <td> 50k to 100k </td>
+                <td> Above 80 </td>
+                <td> Cambridge Gradualte </td>
+                <td> 20 May 2017 </td>
+                <td class="link"><a href="#"><i class="im im-info"></i></a></td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>Math Teacher Needed</td>
+                <td> Teacher</td>
+                <td> 2 </td>
+                <td> 40k to 80k </td>
+                <td> Above 70 </td>
+                <td> Dhaka University </td>
+                <td> 31 May 2017 </td>
+                <td class="link"><a href="#"><i class="im im-info"></i></a></td>
+                </tr>
+              </tbody>
+              </table>
             </div>
-        </div>
-        <!-- End Result -->
-        
+              <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+            </div>
+          </div>
+          </div>
+
+
+          <!--End Job List-->
+
+
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -273,8 +233,6 @@
                             <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                             <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                             <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                         </ul>
                     </div>
                 </div>
@@ -283,7 +241,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="copyright">Copyright 2016</div>
+                        <div class="copyright">&copy; BAF Shaheen College, 2017</div>
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="www.facebook.com"><img src="assets/dist/img/fb.png"></a></li>
+                                <li><a href="www.twitter.com"><img src="assets/dist/img/twitter.png"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,6 +259,7 @@
   <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="assets/vendor/jquery-scroller/jquery-scroller.js" type="text/javascript"></script>
   <script type="text/javascript" src="assets/vendor/jcarousel/dist/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="assets/vendor/jcarousel/examples/responsive/jcarousel.responsive.js"></script>
   <script type="text/javascript" src="assets/dist/js/app.min.js"></script>
 </body>
 </html>

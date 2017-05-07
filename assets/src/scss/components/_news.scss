@@ -33,6 +33,7 @@
 #news {
 	.news-div {
 		border: 1px solid rgb(215, 215, 215);
+		padding-bottom: 35px;
 		margin-bottom: 20px;
 
 		h1 {
@@ -86,6 +87,7 @@
 	    	&:hover {
 	    		background-color: #79CA9F;
 	    		color: #fff;
+	    		text-decoration: none;
 	    	}
 		}
 
