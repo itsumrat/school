@@ -534,7 +534,7 @@ Copyright 2017-2017 Hussain Sumrat
   width: 300px;
   height: 40px;
   margin-top: 10px; 
-  border: 1px solid #000;
+  border: 1px solid #ccc;
 }
 
 .result .form-control {
@@ -545,8 +545,9 @@ Copyright 2017-2017 Hussain Sumrat
 
 .result .btn {
   margin-left: 149px;
-  font-size: 16px; 
+  font-size: 16px;
   background-color: transparent;
+  border: 1px solid #ccc; 
   border-radius: 0;
 }
 
