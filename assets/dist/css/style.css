@@ -500,6 +500,10 @@ Copyright 2017-2017 Hussain Sumrat
   display: inline-block;
 }
 
+.result h1 {
+  text-align: center;
+}
+
 .result #form {
   width: 600px;
   height: 600px;
@@ -536,6 +540,13 @@ Copyright 2017-2017 Hussain Sumrat
 .result .form-control {
   width: 50%;
   height: 40px;
+  border-radius: 0;
+}
+
+.result .btn {
+  margin-left: 149px;
+  font-size: 16px; 
+  background-color: transparent;
   border-radius: 0;
 }
 
