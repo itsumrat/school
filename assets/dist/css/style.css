@@ -831,6 +831,28 @@ tbody td {
   color: #1d523c;
 }
 
+#school-rules h1 {
+  padding-bottom: 90px;
+  margin-top: 50px; 
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: .36;
+  color: #82ca9c;
+  text-transform: uppercase;
+}
+
+#school-rules ul {
+  list-style: none;
+}
+#school-rules ul li {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.867;
+  color: rgba(66, 66, 66, .749);
+  text-align: center;
+}
+
 /*
  * Default
  * 
