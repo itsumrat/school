@@ -3,10 +3,11 @@
 	.nav {
 		li {
 		   a {
-			 color: #fff;
-			 padding: 10px 40px;
-    		 padding-left: 0;
-    		 line-height: 1.7;
+			color: #fff;
+			padding: 10px 40px;
+			padding-left: 0;
+			line-height: 1.7;
+			display: block;
 		   }
 		}
 
@@ -14,6 +15,10 @@
 			background-color: #82ca9c;
 			border: 0;
 			border-radius: 0;
+
+			&:hover {
+		   	 background-color: #58AC81;
+		   }
 		}
 	}
 }
@@ -41,4 +46,17 @@
 	.navbar-nav {
 	    height: 50px;
 	}
+}
+
+.dropdown-menu {
+	left: -40px;
+}
+a#academicDropdownMenuLink {
+	padding-bottom: 5px;
+}
+a.dropdown-item {
+	padding: 0 !important;
+}
+.navbar-nav>li>.dropdown-menu {
+	margin-top: 7px;
 }

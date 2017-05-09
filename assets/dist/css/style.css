@@ -9,9 +9,10 @@ Licensed Commercial
 Copyright 2017-2017 Hussain Sumrat
 */
 .navbar .nav li a {
+  display: block; 
   padding: 10px 40px;
   padding-left: 0;
-  line-height: 1.7; 
+  line-height: 1.7;
   color: #fff;
 }
 
@@ -19,6 +20,9 @@ Copyright 2017-2017 Hussain Sumrat
   background-color: #82ca9c;
   border: 0;
   border-radius: 0;
+}
+.navbar .nav .dropdown-menu:hover {
+  background-color: #58ac81;
 }
 
 .navbar-default {
@@ -44,6 +48,22 @@ Copyright 2017-2017 Hussain Sumrat
   .navbar-nav {
     height: 50px;
   }
+}
+
+.dropdown-menu {
+  left: -40px;
+}
+
+a#academicDropdownMenuLink {
+  padding-bottom: 5px;
+}
+
+a.dropdown-item {
+  padding: 0 !important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 7px;
 }
 
 .item img {
@@ -768,6 +788,49 @@ Copyright 2017-2017 Hussain Sumrat
   text-align: justify;
 }
 
+#job-container {
+  margin-top: 30px;
+}
+#job-container .back {
+  margin: 20px; 
+  background-color: #32cd32;
+  border-color: #1d523c;
+}
+#job-container .back:hover {
+  background: #1d523c;
+}
+
+dt {
+  text-align: right !important;
+}
+
+#job-list tr {
+  font-size: .8em;
+}
+
+td.link {
+  text-align: center;
+}
+
+thead {
+  color: #fff; 
+  background-color: #379970;
+}
+thead th {
+  border-color: #1d523c !important;
+}
+
+tbody td {
+  border-color: #1d523c !important;
+}
+
+.page-link {
+  color: #379970;
+}
+.page-link:hover {
+  color: #1d523c;
+}
+
 /*
  * Default
  * 
@@ -852,7 +915,13 @@ header .btn:focus {
   }
 }
 
+.tickercontainer .mask .newsticker a {
+  font-size: 16px;
+}
+
 footer {
+  position: absolute;
+  width: 100%;
   padding: 30px 0 0 0;
   margin-top: 100px; 
   color: #fff;

@@ -1,24 +1,19 @@
 $green: #379970;
 $dark-green: #1d523c;
+$light-green: #32CD32;
 
 #job-container{
 	margin-top: 30px;
-	.back{
+	
+	.back {
 		background-color: $light-green;
 		border-color: $dark-green;
 		margin: 20px;
-		&:hover{
+
+		&:hover {
 			background: $dark-green;
 		}
 	}
-}
-
-.card-header{
-	background-color: $dark-green;
-	color: #fff;
-}
-.card{
-	border-color: $dark-green;
 }
 
 dt{
@@ -26,14 +21,14 @@ dt{
 }
 
 #job-list{
-	tr{
+	tr {
 		font-size: 0.8em;		
 	}
 }
 td.link {
  text-align: center;
 }
-thead{
+thead {
 	background-color: $green;
 	color: #fff;
 	th{
@@ -41,20 +36,13 @@ thead{
 	}
 }
 tbody{
-	td{
+	td {
 		border-color: $dark-green !important;
-	}
-	i{
-		color: $green;
-		&:hover{
-			color: $dark-green;
-		}
 	}
 }
 .page-link{
 	color: $green;
-	&:hover{
+	&:hover {
 		color: $dark-green;
 	}
-
 }
