@@ -1,0 +1,26 @@
+#notice-full {
+	font-family: 'Lato', sans-serif;
+	padding-top: 30px;
+	padding-bottom: 90px;
+
+	.title {
+		h1 {
+			font-size: 50px;
+			color: rgb(130, 202, 156);
+			font-weight: bold;
+			line-height: 0.36;
+			text-align: center;
+			text-transform: capitalize;
+			padding-top: 50px;
+			padding-bottom: 40px;
+		}
+	}
+	.details {
+		p {
+			font-size: 15px;
+			color: rgba(66, 66, 66, 0.749);
+			line-height: 2.267;
+			text-align: left;
+		}
+	}
+}
