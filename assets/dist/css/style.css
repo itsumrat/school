@@ -853,6 +853,13 @@ tbody td {
   text-align: center;
 }
 
+.nav-tabs {
+  margin-top: 50px;
+}
+.nav-tabs li.nav-item {
+  width: 50%;
+}
+
 /*
  * Default
  * 
