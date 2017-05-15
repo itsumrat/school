@@ -124,6 +124,5 @@ jQuery(document).ready(function($){
             }
         });
     });
-
-
 });
+
