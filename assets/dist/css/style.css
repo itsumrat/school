@@ -582,6 +582,11 @@ a.dropdown-item {
   height: 300px;
 }
 
+img.video-img {
+  width: 100%;
+  margin: 10px 0;
+}
+
 .news-home {
   font-family: 'Lato', sans-serif;
 }
