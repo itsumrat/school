@@ -155,53 +155,132 @@
         <section id="teacher-list">
             <div class="container">
                 <div class="row">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Class Name</th>
-                          <th>Male Student</th>
-                          <th>Female Student</th>
-                          <th>Total Student</th>
-                        </tr>
-                      </thead>
-                      <tbody id="myTable">
-                        <tr>
-                          <td>One</td>
-                          <td>65</td>
-                          <td>60</td>
-                          <td>125</td>
-                        </tr>
-                        <tr>
-                          <td>One</td>
-                          <td>65</td>
-                          <td>60</td>
-                          <td>125</td>
-                        </tr>
-                        <tr>
-                          <td>One</td>
-                          <td>65</td>
-                          <td>60</td>
-                          <td>125</td>
-                        </tr>
-                        <tr>
-                          <td>One</td>
-                          <td>65</td>
-                          <td>60</td>
-                          <td>125</td>
-                        </tr>
-                        <tr>
-                          <td>One</td>
-                          <td>65</td>
-                          <td>60</td>
-                          <td>125</td>
-                        </tr>
-                      </tbody>
-                    </table>   
-                  </div>
-                  <div class="col-md-12 text-center">
-                  <ul class="pagination pagination-lg pager" id="myPager"></ul>
-                  </div>
+                <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" data-toggle="tab" href="#morning" role="tab">Morning</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" data-toggle="tab" href="#day" role="tab">Day</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="morning" role="tabpanel">
+                            <form>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">Bangla Medium
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">English Medium
+                                </label>
+                            </form>
+                            <form>
+                                <div class="form-group">
+                                    <label for="sel1">Select Exam Type</label>
+                                    <select class="form-control" id="sel1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>Class Name</th>
+                                      <th>Male Student</th>
+                                      <th>Female Student</th>
+                                      <th>Total Student</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="myTable">
+                                    <tr>
+                                      <td>One</td>
+                                      <td>65</td>
+                                      <td>60</td>
+                                      <td>125</td>
+                                    </tr>
+                                    <tr>
+                                      <td>One</td>
+                                      <td>65</td>
+                                      <td>60</td>
+                                      <td>125</td>
+                                    </tr>
+                                    <tr>
+                                      <td>One</td>
+                                      <td>65</td>
+                                      <td>60</td>
+                                      <td>125</td>
+                                    </tr>
+                                    <tr>
+                                      <td>One</td>
+                                      <td>65</td>
+                                      <td>60</td>
+                                      <td>125</td>
+                                    </tr>
+                                    <tr>
+                                      <td>One</td>
+                                      <td>65</td>
+                                      <td>60</td>
+                                      <td>125</td>
+                                    </tr>
+                                  </tbody>
+                                </table>   
+                              </div>
+                        </div>
+                        <div class="tab-pane" id="day" role="tabpanel">
+                            <form>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">Bangla Medium
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">English Medium
+                                </label>
+                            </form>
+                            <form>
+                                <div class="form-group">
+                                  <label for="sel1">Select Exam Type</label>
+                                  <select class="form-control" id="sel1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                  </select>
+                                </div>
+                            </form>
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Class Name</th>
+                                      <th>Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Four</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Five</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Six</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
