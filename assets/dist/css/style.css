@@ -865,6 +865,13 @@ tbody td {
   width: 50%;
 }
 
+.tab-content .tab-pane form {
+  margin: 20px 0;
+}
+.tab-content .tab-pane form .form-group select {
+  width: 25%;
+}
+
 /*
  * Default
  * 
