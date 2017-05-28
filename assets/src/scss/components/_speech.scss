@@ -5,6 +5,10 @@
 		text-transform: capitalize;
 		color: #79CA9F;
 		padding-bottom: 5px;
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        font-size: 1.5rem;
+	    }
 	}
 	h5 {
 		text-align: center;
@@ -39,6 +43,11 @@
 	    		background-color: #79CA9F;
 	    		color: #fff;
 	    	}
+
+	    	// Below 34em (544px)
+		    @include media("<sm") {
+		        margin-bottom: 20px;
+		    }
 		}
 	}
 }

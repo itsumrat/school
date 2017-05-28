@@ -6,6 +6,11 @@ footer {
 	padding: 30px 0 0 0;
 	margin-top: 100px;
 
+	// Below 34em (544px)
+    @include media("<sm") {
+        margin-top: 40px;
+    }
+
 	h4 {
 		font-size: 15px;
 		font-family: 'Lato', sans-serif;
@@ -16,6 +21,11 @@ footer {
 
 	.logo {
 		text-align: center;
+
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        margin-bottom: 20px;
+	    }
 	}
 
 	ul {

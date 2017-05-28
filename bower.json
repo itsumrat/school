@@ -17,9 +17,10 @@
     "vendor"
   ],
   "dependencies": {
-    "bootstrap": "3.3.7",
+    "bootstrap": "4.0.0-alpha.6",
     "font-awesome": "4.5.0",
-    "jcarousel": "^0.3.4",
+    "include-media": "1.4.9",
+    "jcarousel": "^0.3.5",
     "lightbox2": "^2.9.0"
   },
   "devDependencies": {}

@@ -1,6 +1,11 @@
-.item img {
+.carousel-item {
   width: 100%;
   height: 600px;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        height: 355px;
+    }
 }
   
 //pager dot outside
@@ -19,13 +24,18 @@
   background-color: #79CA9F;
 }
   
-.carousel-inner>.item>img {
+.carousel-inner>.carousel-item>img {
   line-height: 1;
   height: 650px;
   width: 100%;
+
+  // Below 34em (544px)
+    @include media("<sm") {
+        height: 355px;
+    }
 }
 
-.item::after {
+.carousel-item::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -39,6 +49,11 @@
   text-shadow: none;
   text-align: left;
 
+  // Below 34em (544px)
+    @include media("<sm") {
+        top: 0;
+    }
+
   h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
@@ -46,12 +61,23 @@
     font-size: 50px;
     padding-bottom: 20px;
     font-weight: bold;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        font-size: 25px;
+    }
   }
   p {
     font-family: 'Lato', sans-serif;
     color: #fff;
     font-size: 18px;
     line-height: 1.667;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        height: 16px;
+        line-height: 1.1;
+    }
   }
 }
 
@@ -110,7 +136,6 @@
 }
 
 
-
 .navbar {
     height: 52px;
     margin: 0;
@@ -125,4 +150,4 @@
         color: #fff;
       }
     }
-  }
+} 

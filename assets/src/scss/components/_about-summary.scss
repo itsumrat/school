@@ -2,6 +2,11 @@
 	padding: 60px 0;
 	background-color: #F7F8F8;
 
+	// Below 34em (544px)
+    @include media("<sm") {
+        padding: 0;
+    }
+
 	h1 {
 		font-family: 'Lato', sans-serif;
 		text-transform: capitalize;
@@ -10,6 +15,11 @@
   		font-weight: bold;
   		line-height: 0.583;
 	    padding-bottom: 30px;
+
+	    // Below 34em (544px)
+	    @include media("<sm") {
+	        font-size: 25px;
+	    }
 	}
 	p {
 		font-size: 15px;
