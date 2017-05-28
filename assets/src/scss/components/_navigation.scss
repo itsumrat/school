@@ -1,0 +1,107 @@
+/* Navigation */
+.menu {
+	background-color: $primary-color;
+	list-style: none;
+
+	a{
+		display: block;
+		text-decoration: none;
+		padding: 20px 8px;
+		color: #fff;
+	}
+}
+
+.menu li{
+ position: relative;
+}
+.menu li ul{
+ display: block;
+ background: rgba(255, 0, 0, 0.12);
+ max-height: 0;
+ overflow: hidden;
+ transition: all 0.3s ease;
+}
+nav{
+	max-height: 50px;
+	transition: max-height 0.3s;
+	overflow: hidden;
+	background-color: $primary-color;
+}
+.menu-btn{
+ background-color: $primary-color;
+ text-align: center;
+ cursor: s-resize;
+}
+.menu-btn img{
+ vertical-align: middle;
+ height: 50px;
+}
+.menu-open,
+.menu .open > ul{
+ max-height: 2000px;
+}
+.menu .open > .more img{
+ transform: rotate(-90deg);
+}
+.more img{
+	height: 10px;
+    transition: transform .3s;
+    margin-top: 54px;
+}
+.more{
+ background: rgba(0, 0, 0, 0.38);
+ float: right;
+ min-width: 10%;
+ cursor: move;
+}
+
+@media all and (min-width: 1200px){
+nav{
+ max-height: 100%;
+ overflow: visible;
+ background-color: $primary-color;
+}
+.menu-btn {
+	display: none;
+}
+.menu {
+	text-align: center;
+	margin-bottom: 0;
+
+	a {
+	 	width: 8em;
+		background-color: $primary-color;
+
+		&:hover{
+			background-color: $hover-color;
+		}
+	}
+}
+
+.menu > li{
+ display: inline-block;
+ margin: 0 2px;
+}
+.menu li ul{
+ left: -9999px;
+ position:absolute;
+ z-index: 999;
+ overflow: visible;
+ transition: all 0.1s ease;
+}
+.menu > li > ul ul{
+ top: 0;
+}
+.menu li:hover > ul{
+ left:100%; 
+}
+.menu > li:hover > ul{
+ left: -40px;
+}
+.menu .open > ul{
+ left:100%; 
+}
+.menu > li.open > ul{
+ left: 0;
+}
+}

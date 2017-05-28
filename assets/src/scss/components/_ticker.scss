@@ -1,0 +1,37 @@
+.tickercontainer {
+	width: 100%;
+	height: 45px;
+	border: 1px solid #f4f4f4;
+	border-left: 0;
+	border-top: 0;
+
+	.mask {
+		width: 100%;
+		top: 15px;
+		left: 0;
+
+		.newsticker {
+			a {
+				font-family: 'Lato', sans-serif;
+				color: rgba(66, 66, 66, 0.749);
+  				line-height: 2;
+			}
+		}
+	}
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.update-text {
+	font-family: 'Lato', sans-serif;
+	height: 45px;
+    text-align: center;
+    background-color: #58ac81;
+    line-height: 2.875;
+    font-size: 16px;
+    color: #fff;
+    border-top-right-radius: 32px;
+}

@@ -1,0 +1,83 @@
+#about-content {
+	font-family: 'Lato', sans-serif;
+	padding-top: 30px;
+	padding-bottom: 90px;
+	
+	h3 {
+		font-size: 18px;
+		color: rgba(66, 66, 66, 0.902);
+		line-height: 1.889;
+	}
+
+	p {
+		font-size: 15px;
+		color: rgba(66, 66, 66, 0.749);
+		line-height: 2.267;
+		text-align: left;
+	}
+
+	h1 {
+		font-size: 50px;
+		color: rgb(130, 202, 156);
+		font-weight: bold;
+		line-height: 0.36;
+		text-align: center;
+		text-transform: capitalize;
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+
+	.jcarousel {
+	    width: 85%;
+	    margin: 0 auto;
+
+	    ul {
+	    	text-align : center;
+
+	    	li {
+	    		img {
+	    			display: inline;
+	    			width: 100px;
+	    		}
+	    		h4 {
+					font-size: 15px;
+					color: rgb(66, 66, 66);
+					line-height: 1.867;
+					text-align: center;
+	    		}
+
+	    		p {
+					font-size: 15px;
+					color: rgba(66, 66, 66, 0.749);
+					line-height: 1.867;
+					text-align: center;
+					padding: 0 10px;
+	    		}
+	    	}
+	    }
+	}
+
+	.jcarousel-wrapper {
+		box-shadow: none;
+	}
+
+	.jcarousel img {
+	    border: 2px solid #75C99C;
+	    border-radius: 50%;
+	}
+
+	.jcarousel-pagination a {
+		background-color: #E7E7E7;
+		box-shadow: none;
+	}
+
+	.jcarousel-pagination a.active {
+		background-color: #75C99C;
+	}
+}
+
+.jcarousel-control-prev, .jcarousel-control-next {
+	background: transparent;
+	margin-top: 55px;
+	box-shadow: none;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='keywords' content='Site Title'>
+    <meta name='author' content='Hussain Sumrat, itsumrat@gmail.com'>
+    <meta name='designer' content='Hussain Sumrat'>
+    <meta name='coverage' content='Worldwide'>
+    <meta name='distribution' content='Global'>
+      <!-- Search engines -->
+    <meta name="description" content="Site Description">
+    <!-- Google Plus -->
+    <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+    <!-- html itemscope itemtype="http://schema.org/{CONTENT_TYPE}" -->
+    <meta itemprop="name" content="Site Title">
+    <meta itemprop="description" content="Site Description">
+    <meta itemprop="image" content="image path">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="Site Description">
+    <meta name="twitter:site" content="@HSumrat">
+    <meta name="twitter:title" content="Site Title">
+    <meta name="twitter:description" content="Site Description">
+    <meta name="twitter:creator" content="@HSumrat">
+    <meta name="twitter:image:src" content="image path">
+    <meta name="twitter:player" content="">
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Site Title">
+    <meta property="og:description" content="Site Description">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="image path">
+    <meta property="fb:admins" content="">
+    <meta property="fb:app_id" content="fb apps id">
+    <meta property="og:type" content="">
+    <meta property="og:locale" content="">
+    <meta property="og:audio" content="">
+    <meta property="og:video" content="">
+
+    <title>School</title>
+    
+    <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/jquery-scroller/li-scroller.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-7 col-xs-12">
+                    <img class="img-responsive" src="assets/dist/img/banner.jpg">
+                </div>
+                <div class="col-md-offset-3 col-md-4 col-sm-5 col-xs-12">
+                    <form>
+                        <input type="search" placeholder="Search">
+                        <li class="dropdown" id="menuLogin">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu" style="padding:17px;">
+                              <form class="form" id="formLogin"> 
+                                <input name="username" id="username/email/phone" type="text" placeholder="Username"> 
+                                <input name="password" id="password" type="password" placeholder="Password"><br>
+                                <button type="button" id="btnLogin" class="btn">Login</button>
+                              </form>
+                            </div>
+                        </li>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About School</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="academicDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Academic
+                </a>
+                <div class="dropdown-menu" aria-labelledby="academicDropdownMenuLink">
+                  <a class="dropdown-item" href="class-routine.html">Class Routine</a>
+                  <a class="dropdown-item" href="exam-routine.html">Exam Routine</a>
+                  <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                  <a class="dropdown-item" href="result.html">Result</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="academicDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Administration
+                </a>
+                <div class="dropdown-menu" aria-labelledby="academicDropdownMenuLink">
+                  <a class="dropdown-item" href="teacher-list.html">Teachers</a>
+                  <a class="dropdown-item" href="teacher-list.html">Staffs</a>
+                  <a class="dropdown-item" href="exam-routine.html">Students</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="academicDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Gallery
+                </a>
+                <div class="dropdown-menu" aria-labelledby="academicDropdownMenuLink">
+                  <a class="dropdown-item" href="photo-gallery.html">Photo</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="academicDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admission
+                </a>
+                <div class="dropdown-menu" aria-labelledby="academicDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Rules & Regulations</a>
+                  <a class="dropdown-item" href="#">Form</a>
+                  <a class="dropdown-item" href="#">Result</a>
+                </div>
+              </li>
+              <li><a href="news.html">News & Blog</a></li>
+              <li><a href="job.html">Job</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End Navigation -->
+    <!-- Ticker -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 nopadding update-text">UPDATES &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-10 nopadding">
+                <ul id="ticker01">
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+                    <!-- eccetera -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Ticker -->
+
+    <section id="exam-routine">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" data-toggle="tab" href="#morning" role="tab">Morning</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" data-toggle="tab" href="#day" role="tab">Day</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="morning" role="tabpanel">
+                            <form>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">Bangla Medium
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">English Medium
+                                </label>
+                            </form>
+                            <form>
+                                <div class="form-group">
+                                    <label for="sel1">Select Exam Type</label>
+                                    <select class="form-control" id="sel1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Class Name</th>
+                                      <th>Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>One</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Two</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Three</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="day" role="tabpanel">
+                            <form>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">Bangla Medium
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">English Medium
+                                </label>
+                            </form>
+                            <form>
+                                <div class="form-group">
+                                  <label for="sel1">Select Exam Type</label>
+                                  <select class="form-control" id="sel1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                  </select>
+                                </div>
+                            </form>
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Class Name</th>
+                                      <th>Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Four</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Five</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Six</td>
+                                        <td><a href="#">Routine</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 logo">
+                    <img src="assets/dist/img/logo.png">
+                    <h4>BAF Shaheen College</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4>Teachers</h4>
+                    <ul>
+                        <li><a href="#">Current Teachers List</a></li>
+                        <li><a href="#">Empty Teachers List</a></li>
+                        <li><a href="#">Ex Teachers List</a></li>
+                        <li><a href="#">Employees List</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Students</h4>
+                    <ul>
+                        <li><a href="#">Class Routine</a></li>
+                        <li><a href="#">Result</a></li>
+                        <li><a href="#">Golden Face</a></li>
+                        <li><a href="#">Cultural Function</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Guardians</h4>
+                    <ul>
+                        <li><a href="#">Class Routine</a></li>
+                        <li><a href="#">Result</a></li>
+                        <li><a href="#">Golden Face</a></li>
+                        <li><a href="#">Cultural Function</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">&copy; BAF Shaheen College, 2017</div>
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="www.facebook.com"><img src="assets/dist/img/fb.png"></a></li>
+                            <li><a href="www.twitter.com"><img src="assets/dist/img/twitter.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="assets/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script> 
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/vendor/jquery-scroller/jquery-scroller.js" type="text/javascript"></script>
+  <script type="text/javascript" src="assets/dist/js/app.min.js"></script>
+</body>
+</html>

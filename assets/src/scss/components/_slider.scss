@@ -1,0 +1,153 @@
+.carousel-item {
+  width: 100%;
+  height: 600px;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        height: 355px;
+    }
+}
+  
+//pager dot outside
+.carousel-indicators {
+  position: absolute;
+  bottom: 50px;
+}
+  
+//pager dot
+.carousel-indicators li {
+  border-color: gray;
+}
+  
+//active pager dot
+.carousel-indicators .active {
+  background-color: #79CA9F;
+}
+  
+.carousel-inner>.carousel-item>img {
+  line-height: 1;
+  height: 650px;
+  width: 100%;
+
+  // Below 34em (544px)
+    @include media("<sm") {
+        height: 355px;
+    }
+}
+
+.carousel-item::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+.carousel-caption {
+  text-shadow: none;
+  text-align: left;
+
+  // Below 34em (544px)
+    @include media("<sm") {
+        top: 0;
+    }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color: rgb(130, 202, 156);
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        font-size: 25px;
+    }
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.667;
+
+    // Below 34em (544px)
+    @include media("<sm") {
+        height: 16px;
+        line-height: 1.1;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    left: 9%;
+    bottom: 40%;
+    width: 650px;
+  }
+}
+  
+.notice-slider {
+  background-color: #79CA9F;
+  position: absolute;
+  top: 40%;
+  right: 1.75%;
+
+  h4 {
+    a {
+      display: block;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+      text-align: center;
+      padding: 10px 0;
+      margin: 0;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+
+      &:hover {
+        background-color: #58AC81;
+      }
+      a {
+        font-family: 'Lato', sans-serif;
+        padding: 0 25px;
+        margin: 0;
+        font-size: 13px;
+        line-height: 2.5;
+        color: #fff;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+.navbar {
+    height: 52px;
+    margin: 0;
+    background-color: #82ca9c;
+    border-radius: 0;
+    padding: 0;
+
+    li {
+
+      a {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+} 

@@ -1,0 +1,23 @@
+#school-rules {
+	h1 {
+		font-size: 50px;
+		font-family: 'Lato', sans-serif;
+		color: rgb(130, 202, 156);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 0.36;
+		padding-bottom: 90px;
+		margin-top: 50px;
+	}
+	ul {
+		list-style: none;
+		
+		li {
+			font-size: 15px;
+			font-family: 'Lato', sans-serif;
+			color: rgba(66, 66, 66, 0.749);
+			line-height: 1.867;
+			text-align: center;
+		}
+	}
+}

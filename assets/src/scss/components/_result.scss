@@ -1,0 +1,48 @@
+.result {
+	h1 {
+		text-align: center;
+	}
+	#form {
+	    background-color: #FFF;
+	    height: 600px;
+	    width: 600px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-top: 0px;
+	    border-top-left-radius: 10px;
+	    border-top-right-radius: 10px;
+	    padding: 0px;
+	    text-align: center;
+	}
+	label {
+	    font-family: Georgia, "Times New Roman", Times, serif;
+	    font-size: 18px;
+	    color: #333;
+	    height: 20px;
+	    width: 200px;
+	    margin-top: 8px;
+	    margin-left: 10px;
+	    text-align: right;
+	    margin-right:15px;
+	    float:left;
+	}
+	input {
+	    height: 40px;
+	    width: 300px;
+	    border: 1px solid #ccc;
+	    margin-top: 10px;
+	}
+	.form-control {
+    	width: 50%;
+    	height: 40px;
+    	border-radius: 0;
+    }
+
+    .btn {
+    	margin-left: 149px;
+    	border-radius: 0;
+    	background-color: transparent;
+    	font-size: 16px;
+    	border: 1px solid #ccc;
+    }
+}

@@ -1,0 +1,53 @@
+#speech {
+	padding: 80px 0;
+	h1 {
+		text-align: center;
+		text-transform: capitalize;
+		color: #79CA9F;
+		padding-bottom: 5px;
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        font-size: 1.5rem;
+	    }
+	}
+	h5 {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.speech-div {
+		img {
+			width: 150px;
+	    	height: 130px;
+	    	border-top-left-radius: 24px;
+    		border-bottom-right-radius: 24px;
+		}
+		h4 {
+			font-size: 14px;
+			font-weight: bold;
+			color: #555;
+		}
+		p {
+			padding-right: 45px;
+			padding-bottom: 15px;
+		}
+		.btn-more {
+			border-radius: 32px;
+	    	padding: 8px 20px;
+	    	text-transform: uppercase;
+	    	font-size: 13px;
+	    	line-height: 1;
+	    	border: 1px solid #79CA9F;
+	    	color: #79CA9F;
+
+	    	&:hover {
+	    		background-color: #79CA9F;
+	    		color: #fff;
+	    	}
+
+	    	// Below 34em (544px)
+		    @include media("<sm") {
+		        margin-bottom: 20px;
+		    }
+		}
+	}
+}
