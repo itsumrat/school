@@ -8,6 +8,14 @@
 		line-height: 0.36;
 		padding-bottom: 90px;
 		margin-top: 50px;
+
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        padding-bottom: 25px;
+		    font-size: 22px;
+		    line-height: 1;
+		    padding: 0 10px;
+	    }
 	}
 	ul {
 		list-style: none;
@@ -18,6 +26,12 @@
 			color: rgba(66, 66, 66, 0.749);
 			line-height: 1.867;
 			text-align: center;
+
+			// Below 34em (544px)
+		    @include media("<sm") {
+		        text-align: left;
+		        padding-bottom: 1rem;
+		    }
 		}
 	}
 }

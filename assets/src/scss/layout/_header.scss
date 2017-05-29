@@ -9,6 +9,11 @@ header {
 
 	span {
 		font-size: 33px;
+
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        font-size: 20px;
+	    }
 	}
 	input {
 		outline: none;
@@ -26,6 +31,12 @@ header {
 		border: solid 1px #ccc;
 		padding: 6px 10px 6px 55px;
 		width: 180px;
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			padding: 6px 10px 6px 5px;
+    		background: #f3f3f3 url(../img/search-icon.jpg) no-repeat 145px center;
+		}
 	}
 
 	input {

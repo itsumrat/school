@@ -1,4 +1,11 @@
 #teacher-list {
+
+	.nav {
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        width: 100%;
+	    }
+	}
 	.table-responsive {
 
 		#myTable {

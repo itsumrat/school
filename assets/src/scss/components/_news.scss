@@ -56,6 +56,11 @@
 			padding: 10px;
 			margin: 0;
 			border-bottom: 1px solid rgb(215, 215, 215); 
+
+			// Below 34em (544px)
+		    @include media("<sm") {
+		        font-size: 22px;
+		    }
 		}
 
 		.date,
@@ -72,6 +77,12 @@
 			width: 100%;
 			height: 300px;
 			padding: 0 10px 10px 10px;
+
+			// Below 34em (544px)
+		    @include media("<sm") {
+		        width: 300px;
+		        height: auto;
+		    }
 		}
 
 		p {
@@ -82,6 +93,11 @@
 			text-align: justify;
 			padding: 0 10px;
 			margin: 0;
+
+			// Below 34em (544px)
+		    @include media("<sm") {
+		        font-size: 16px;
+		    }
 		}
 
 		.btn-more {
@@ -93,6 +109,7 @@
 	    	border: 1px solid #79CA9F;
 	    	color: #79CA9F;
 	    	float: right;
+	    	margin-right: 10px;
 
 	    	&:hover {
 	    		background-color: #79CA9F;

@@ -2,6 +2,11 @@
 	text-align: center;
 	padding: 90px 0;
 
+	// Below 34em (544px)
+	@include media("<sm") {
+		padding: 10px 0;
+	}
+
 	h1 {
 		font-size: 50px;
 		font-family: 'Lato', sans-serif;
@@ -15,6 +20,7 @@
 	    @include media("<sm") {
 	    	font-size: 25px;
 	        line-height: 1;
+	        padding-bottom: 40px;
 	    }
 	}
 

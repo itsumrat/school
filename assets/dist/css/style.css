@@ -1,12 +1,12 @@
 /*!
 Theme Name: School
-Theme URI: http://schoolmars.com
+Theme URI: http://sparkbit.club
 Author: Hussain Sumrat 
-Author URI: http://schoolmars.com
+Author URI: http://sparkbit.club
 Version: 0.0.1
 Description: 
 Licensed Commercial 
-Copyright 2017-2017 Hussain Sumrat
+Copyright 2017-2018 Hussain Sumrat
 */
 /* Navigation */
 .menu {
@@ -306,6 +306,11 @@ nav {
 #speech {
   padding: 80px 0;
 }
+@media (max-width: 575px) {
+  #speech {
+    padding: 35px 0;
+  }
+}
 #speech h1 {
   padding-bottom: 5px; 
   color: #79ca9f;
@@ -411,6 +416,11 @@ nav {
   -webkit-box-shadow: 0 2px 40px 0 #ebecec;
           box-shadow: 0 2px 40px 0 #ebecec;
 }
+@media (max-width: 575px) {
+  #about-summary .at-a-glance {
+    margin-top: 0;
+  }
+}
 #about-summary .at-a-glance h4 {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -436,6 +446,11 @@ nav {
   padding: 90px 0; 
   text-align: center;
 }
+@media (max-width: 575px) {
+  #way-of-teaching {
+    padding: 10px 0;
+  }
+}
 #way-of-teaching h1 {
   padding-bottom: 90px; 
   font-family: 'Lato', sans-serif;
@@ -447,6 +462,7 @@ nav {
 }
 @media (max-width: 575px) {
   #way-of-teaching h1 {
+    padding-bottom: 40px; 
     font-size: 25px;
     line-height: 1;
   }
@@ -558,6 +574,11 @@ nav {
   padding-bottom: 90px; 
   font-family: 'Lato', sans-serif;
 }
+@media (max-width: 575px) {
+  #about-content {
+    padding-bottom: 0;
+  }
+}
 #about-content h3 {
   font-size: 18px;
   line-height: 1.889; 
@@ -578,6 +599,14 @@ nav {
   color: #82ca9c;
   text-align: center;
   text-transform: capitalize;
+}
+@media (max-width: 575px) {
+  #about-content h1 {
+    padding-top: 25px;
+    padding-bottom: 20px; 
+    font-size: 22px;
+    line-height: 1;
+  }
 }
 #about-content .jcarousel {
   width: 85%;
@@ -625,6 +654,12 @@ nav {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+@media (max-width: 575px) {
+  #teacher-list .nav {
+    width: 100%;
+  }
 }
 
 #teacher-list .table-responsive #myTable tr td img {
@@ -688,20 +723,42 @@ nav {
   border-radius: 0;
 }
 
-.gallery {
-  padding: 20px 30px;
+#gallery {
+  padding: 30px;
 }
-.gallery h2 {
-  color: #555;
+@media (max-width: 575px) {
+  #gallery {
+    padding: 20px 10px;
+  }
 }
-.gallery img {
+#gallery h2 {
+  padding-bottom: 20px; 
+  color: #257e25;
+  text-align: center;
+}
+#gallery img {
   width: 350px;
   height: 300px;
+  margin-bottom: 25px;
+}
+@media (max-width: 575px) {
+  #gallery img {
+    width: 300px;
+    height: 250px;
+    padding-bottom: 10px;
+  }
 }
 
 img.video-img {
   width: 100%;
   margin: 10px 0;
+}
+@media (max-width: 575px) {
+  img.video-img {
+    width: 300px;
+    height: 250px;
+    padding-bottom: 10px;
+  }
 }
 
 .news-home {
@@ -756,6 +813,11 @@ img.video-img {
   text-transform: uppercase;
   border-bottom: 1px solid #d7d7d7;
 }
+@media (max-width: 575px) {
+  #news .news-div h1 {
+    font-size: 22px;
+  }
+}
 #news .news-div .date,
   #news .news-div .publisher {
   padding: 10px; 
@@ -770,6 +832,12 @@ img.video-img {
   height: 300px;
   padding: 0 10px 10px 10px;
 }
+@media (max-width: 575px) {
+  #news .news-div .featured-img {
+    width: 300px;
+    height: auto;
+  }
+}
 #news .news-div p {
   padding: 0 10px;
   margin: 0; 
@@ -779,9 +847,15 @@ img.video-img {
   color: #666;
   text-align: justify;
 }
+@media (max-width: 575px) {
+  #news .news-div p {
+    font-size: 16px;
+  }
+}
 #news .news-div .btn-more {
-  float: right; 
+  float: right;
   padding: 8px 20px;
+  margin-right: 10px; 
   font-size: 13px;
   line-height: 1;
   color: #79ca9f;
@@ -973,6 +1047,14 @@ tbody td {
   color: #82ca9c;
   text-transform: uppercase;
 }
+@media (max-width: 575px) {
+  #school-rules h1 {
+    padding: 0 10px; 
+    padding-bottom: 25px;
+    font-size: 22px;
+    line-height: 1;
+  }
+}
 
 #school-rules ul {
   list-style: none;
@@ -983,6 +1065,12 @@ tbody td {
   line-height: 1.867;
   color: rgba(66, 66, 66, .749);
   text-align: center;
+}
+@media (max-width: 575px) {
+  #school-rules ul li {
+    padding-bottom: 1rem; 
+    text-align: left;
+  }
 }
 
 .nav-tabs {
@@ -997,6 +1085,11 @@ tbody td {
 }
 .tab-content .tab-pane form .form-group select {
   width: 25%;
+}
+@media (max-width: 575px) {
+  .tab-content .tab-pane form .form-group select {
+    width: 100%;
+  }
 }
 
 /*
@@ -1017,6 +1110,11 @@ header {
 header span {
   font-size: 33px;
 }
+@media (max-width: 575px) {
+  header span {
+    font-size: 20px;
+  }
+}
 header input {
   outline: none;
 }
@@ -1033,6 +1131,12 @@ header input[type=search] {
   padding: 6px 10px 6px 55px;
   background: #f3f3f3 url(../img/search-icon.jpg) no-repeat 0 center;
   border: solid 1px #ccc;
+}
+@media (max-width: 575px) {
+  header input[type=search] {
+    padding: 6px 10px 6px 5px;
+    background: #f3f3f3 url(../img/search-icon.jpg) no-repeat 145px center;
+  }
 }
 header input {
   padding: 7px; 
@@ -1202,11 +1306,22 @@ footer hr {
   padding: 70px 0;
   font-family: 'Lato', sans-serif;
 }
+@media (max-width: 575px) {
+  #contact {
+    padding: 0;
+  }
+}
 #contact .physical-address {
   padding: 30px 55px 20px 45px;
   margin-top: 60px;
   color: #666; 
   background-color: #f6f6f6;
+}
+@media (max-width: 575px) {
+  #contact .physical-address {
+    padding: 0;
+    margin-top: 0;
+  }
 }
 #contact .physical-address h4 {
   font-size: 22px;
@@ -1225,6 +1340,11 @@ footer hr {
 }
 #contact .contact-form h2 span {
   color: #79ca9f;
+}
+@media (max-width: 575px) {
+  #contact .contact-form h2 {
+    font-size: 30px;
+  }
 }
 #contact .contact-form .input-group-addon {
   color: #999;
@@ -1263,4 +1383,9 @@ footer hr {
 }
 #contact .contact-form button[type=submit]:hover {
   outline: 0;
+}
+@media (max-width: 575px) {
+  #contact .contact-form button[type=submit] {
+    padding: 5px 40px;
+  }
 }

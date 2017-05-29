@@ -2,6 +2,11 @@
 	font-family: 'Lato', sans-serif;
 	padding-top: 30px;
 	padding-bottom: 90px;
+
+	// Below 34em (544px)
+	@include media("<sm") {
+		padding-bottom: 0;
+	}
 	
 	h3 {
 		font-size: 18px;
@@ -25,6 +30,14 @@
 		text-transform: capitalize;
 		padding-top: 50px;
 		padding-bottom: 40px;
+
+		// Below 34em (544px)
+		@include media("<sm") {
+			line-height: 1;
+			font-size: 22px;
+			padding-top: 25px;
+    		padding-bottom: 20px;
+		}
 	}
 
 	.jcarousel {
