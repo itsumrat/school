@@ -12,14 +12,15 @@
 }
 
 .menu li{
- position: relative;
+	position: relative;
 }
 .menu li ul{
- display: block;
- background: rgba(255, 0, 0, 0.12);
- max-height: 0;
- overflow: hidden;
- transition: all 0.3s ease;
+	display: block;
+	background: rgba(255, 0, 0, 0.12);
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	list-style: none;
 }
 nav{
 	max-height: 50px;
@@ -28,80 +29,79 @@ nav{
 	background-color: $primary-color;
 }
 .menu-btn{
- background-color: $primary-color;
- text-align: center;
- cursor: s-resize;
+	background-color: $primary-color;
+	text-align: center;
+	cursor: s-resize;
 }
 .menu-btn img{
- vertical-align: middle;
- height: 50px;
+	vertical-align: middle;
+	height: 50px;
 }
 .menu-open,
 .menu .open > ul{
- max-height: 2000px;
+	max-height: 2000px;
 }
 .menu .open > .more img{
- transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }
 .more img{
 	height: 10px;
     transition: transform .3s;
-    margin-top: 54px;
+    margin-top: 30px;
 }
 .more{
- background: rgba(0, 0, 0, 0.38);
- float: right;
- min-width: 10%;
- cursor: move;
+	float: right;
+	min-width: 10%;
+	cursor: move;
 }
 
-@media all and (min-width: 1200px){
-nav{
- max-height: 100%;
- overflow: visible;
- background-color: $primary-color;
-}
-.menu-btn {
-	display: none;
-}
-.menu {
-	text-align: center;
-	margin-bottom: 0;
-
-	a {
-	 	width: 8em;
+@media all and (min-width: 1200px) {
+	nav{
+		max-height: 100%;
+		overflow: visible;
 		background-color: $primary-color;
+	}
+	.menu-btn {
+		display: none;
+	}
+	.menu {
+		text-align: center;
+		margin-bottom: 0;
 
-		&:hover{
-			background-color: $hover-color;
+		a {
+		 	width: 8em;
+			background-color: $primary-color;
+
+			&:hover{
+				background-color: $hover-color;
+			}
 		}
 	}
-}
 
-.menu > li{
- display: inline-block;
- margin: 0 2px;
-}
-.menu li ul{
- left: -9999px;
- position:absolute;
- z-index: 999;
- overflow: visible;
- transition: all 0.1s ease;
-}
-.menu > li > ul ul{
- top: 0;
-}
-.menu li:hover > ul{
- left:100%; 
-}
-.menu > li:hover > ul{
- left: -40px;
-}
-.menu .open > ul{
- left:100%; 
-}
-.menu > li.open > ul{
- left: 0;
-}
+	.menu > li{
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.menu li ul{
+		left: -9999px;
+		position:absolute;
+		z-index: 999;
+		overflow: visible;
+		transition: all 0.1s ease;
+	}
+	.menu > li > ul ul{
+		top: 0;
+	}
+	.menu li:hover > ul{
+		left:100%; 
+	}
+	.menu > li:hover > ul{
+		left: -40px;
+	}
+	.menu .open > ul{
+		left:100%; 
+	}
+	.menu > li.open > ul{
+		left: 0;
+	}
 }

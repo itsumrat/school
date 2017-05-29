@@ -28,6 +28,7 @@ Copyright 2017-2018 Hussain Sumrat
   display: block;
   max-height: 0;
   overflow: hidden;
+  list-style: none; 
   background: rgba(255, 0, 0, .12);
   -webkit-transition: all .3s ease;
        -o-transition: all .3s ease;
@@ -68,7 +69,7 @@ nav {
 
 .more img {
   height: 10px;
-  margin-top: 54px; 
+  margin-top: 30px; 
   -webkit-transition: -webkit-transform .3s;
        -o-transition:      -o-transform .3s;
           transition:         transform .3s;
@@ -77,8 +78,7 @@ nav {
 .more {
   float: right;
   min-width: 10%;
-  cursor: move; 
-  background: rgba(0, 0, 0, .38);
+  cursor: move;
 }
 
 @media all and (min-width: 1200px) {
@@ -103,7 +103,7 @@ nav {
   }
   .menu > li {
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 -2px;
   }
   .menu li ul {
     position: absolute;
