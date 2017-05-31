@@ -22,6 +22,10 @@ footer {
 	.logo {
 		text-align: center;
 
+		img {
+			margin-bottom: 20px;
+		}
+
 		// Below 34em (544px)
 	    @include media("<sm") {
 	        margin-bottom: 20px;
@@ -72,5 +76,32 @@ footer {
 
 	hr {
 		border-top: 1px solid #999;
+	}
+}
+
+#report {
+	.modal-dialog {
+		.modal-content {
+			.modal-body {
+				form {
+					.input-group {
+						margin-bottom: 20px;
+
+						.form-control {
+							border-radius: 0;
+						}
+					}
+					textarea.form-control {
+						min-height: 150px;
+						border-radius: 0;
+					}
+					button {
+						width: 150px;
+						height: 50px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
 	}
 }

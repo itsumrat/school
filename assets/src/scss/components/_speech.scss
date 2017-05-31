@@ -7,7 +7,7 @@
 	}
 
 	h1 {
-		text-align: center;
+		margin: 0 auto;
 		text-transform: capitalize;
 		color: #79CA9F;
 		padding-bottom: 5px;
@@ -20,6 +20,11 @@
 	h5 {
 		text-align: center;
 		padding-bottom: 50px;
+
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        font-size: 1rem;
+	    }
 	}
 	.speech-div {
 		img {

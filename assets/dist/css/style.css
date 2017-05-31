@@ -313,8 +313,8 @@ nav {
 }
 #speech h1 {
   padding-bottom: 5px; 
+  margin: 0 auto;
   color: #79ca9f;
-  text-align: center;
   text-transform: capitalize;
 }
 @media (max-width: 575px) {
@@ -325,6 +325,11 @@ nav {
 #speech h5 {
   padding-bottom: 50px; 
   text-align: center;
+}
+@media (max-width: 575px) {
+  #speech h5 {
+    font-size: 1rem;
+  }
 }
 #speech .speech-div img {
   width: 150px;
@@ -1209,6 +1214,9 @@ footer h4 {
 footer .logo {
   text-align: center;
 }
+footer .logo img {
+  margin-bottom: 20px;
+}
 @media (max-width: 575px) {
   footer .logo {
     margin-bottom: 20px;
@@ -1249,6 +1257,24 @@ footer .social-links ul li:first-child {
 }
 footer hr {
   border-top: 1px solid #999;
+}
+
+#report .modal-dialog .modal-content .modal-body form .input-group {
+  margin-bottom: 20px;
+}
+#report .modal-dialog .modal-content .modal-body form .input-group .form-control {
+  border-radius: 0;
+}
+
+#report .modal-dialog .modal-content .modal-body form textarea.form-control {
+  min-height: 150px;
+  border-radius: 0;
+}
+
+#report .modal-dialog .modal-content .modal-body form button {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
 }
 
 #speech-full {
