@@ -1112,6 +1112,9 @@ header {
 
   padding-top-margin-top: -13px;
 }
+header h1 {
+  display: inline-block;
+}
 header span {
   font-size: 33px;
 }
