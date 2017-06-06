@@ -1,24 +1,16 @@
 header {
 	height: 100px;
 	padding: 20px 0;
-	padding-top: 25px
+	padding-top: 25px;
 
-	img {
-		margin-top: -13px;
+	.header-logo {
+		margin-bottom: 17px;
 	}
 
 	h1 {
 		display: inline-block;
 	}
 
-	span {
-		font-size: 33px;
-
-		// Below 34em (544px)
-	    @include media("<sm") {
-	        font-size: 20px;
-	    }
-	}
 	input {
 		outline: none;
 	}
@@ -38,7 +30,7 @@ header {
 
 		// Below 34em (544px)
 		@include media("<sm") {
-			padding: 6px 10px 6px 5px;
+			width: 130px;
     		background: #f3f3f3 url(../img/search-icon.jpg) no-repeat 145px center;
 		}
 	}
@@ -73,17 +65,29 @@ header {
     height: 140px;
     text-align: center;
 
-    img {
+    .header-logo {
     	max-height: 63px;
     	margin: 0 auto;
     }
   }
 }
 
+// Below 34em (544px)
+@include media("<sm") {
+	.header-logo {
+		float: left;
+		height: 45px;
+	}
+	h1 {
+		font-size: 1.1rem;
+		margin-top: 10px;
+	}
+}
+
 
 #menuLogin {
 	display: inline-block;
-	background-color: #82ca9c;
+	background-color: $primary-color;
 	padding: 7px 20px;
 
 	a {

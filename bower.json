@@ -21,7 +21,8 @@
     "font-awesome": "4.5.0",
     "include-media": "1.4.9",
     "jcarousel": "^0.3.5",
-    "lightbox2": "^2.9.0"
+    "lightbox2": "^2.9.0",
+    "jquery-ui": "^1.12.1"
   },
   "devDependencies": {}
 }

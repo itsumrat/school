@@ -26,7 +26,7 @@
   
 .carousel-inner>.carousel-item>img {
   line-height: 1;
-  height: 650px;
+  height: 600px;
   width: 100%;
 
   // Below 34em (544px)
@@ -42,7 +42,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .3);
 }
 
 .carousel-caption {
@@ -57,7 +57,7 @@
   h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    color: rgb(130, 202, 156);
+    color: $primary-color;
     font-size: 50px;
     padding-bottom: 20px;
     font-weight: bold;
@@ -90,7 +90,7 @@
 }
   
 .notice-slider {
-  background-color: #79CA9F;
+  background-color: $primary-color;
   position: absolute;
   top: 40%;
   right: 1.75%;
@@ -106,6 +106,10 @@
       padding: 10px 0;
       margin: 0;
       border-bottom: 1px solid #fff;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -114,10 +118,10 @@
     list-style: none;
 
     li {
-      border-bottom: 1px solid rgba(255,255,255,0.5);
+      border-bottom: 1px solid rgba(255,255,255,0.4);
 
       &:hover {
-        background-color: #58AC81;
+        background-color: $hover-color;
       }
       a {
         font-family: 'Lato', sans-serif;
@@ -139,7 +143,7 @@
 .navbar {
     height: 52px;
     margin: 0;
-    background-color: #82ca9c;
+    background-color: $primary-color;
     border-radius: 0;
     padding: 0;
 

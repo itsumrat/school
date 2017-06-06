@@ -20,6 +20,7 @@
 	h5 {
 		text-align: center;
 		padding-bottom: 50px;
+		margin: 0 auto;
 
 		// Below 34em (544px)
 	    @include media("<sm") {

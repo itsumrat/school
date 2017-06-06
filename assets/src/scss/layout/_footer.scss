@@ -32,6 +32,17 @@ footer {
 	    }
 	}
 
+	.btn-report {
+		background-color: $primary-color;
+		color: #fff;
+		letter-spacing: 1px;
+
+		// Below 34em (544px)
+	    @include media("<sm") {
+	        margin-bottom: 20px;
+	    }
+	}
+
 	ul {
 		list-style: none;
 		padding-left: 0;
