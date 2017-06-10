@@ -1,13 +1,14 @@
 .news-home {
 	font-family: 'Lato', sans-serif;
+	border: 1px solid $primary-color;
 
 	.title h3 {
-	    font-size: 30px;
+	    font-size: 23px;
 		color: rgb(255, 255, 255);
 		text-transform: uppercase;
-		line-height: 1.433;
-		text-align: center;
-		background-color: #82ca9c;
+		line-height: 2;
+		padding-left: 10px;
+		background-color: $primary-color;
 		padding: 3px;
 
 		// Below 34em (544px)
@@ -24,6 +25,7 @@
 			padding: 5px 0 5px 10px;
 
 			a {
+				font-family: 'Lato', sans-serif;
 				font-size: 20px;
 				color: rgb(119, 119, 119);
 				line-height: 1.792;

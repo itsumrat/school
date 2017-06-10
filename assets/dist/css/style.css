@@ -506,16 +506,13 @@ nav {
 
 .ui-datepicker {
   display: none;
-  max-width: 365px;
+  max-width: 465px;
   padding: 35px;
   font-family: Tahoma;
   font-size: 12px;
   text-transform: uppercase;
   cursor: default;
-  background: #141517;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .1), inset 0 1px 1px black;
-          box-shadow: 0 1px 1px rgba(255, 255, 255, .1), inset 0 1px 1px black;
+  background: #257e25;
 }
 
 .ui-datepicker-header {
@@ -531,12 +528,12 @@ nav {
 .ui-datepicker-month {
   position: relative;
   padding-right: 15px;
-  color: #565656;
+  color: #fff;
 }
 
 .ui-datepicker-year {
   padding-left: 8px;
-  color: #a8a8a8;
+  color: #fff;
 }
 
 .ui-datepicker-month:before {
@@ -548,10 +545,9 @@ nav {
   height: 5px;
   content: '';
   background: #a5cd4e;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5cd4e), color-stop(100%, #6b8f1a));
+  background: -webkit-gradient(linear, left top, left bottom, from(#a5cd4e), to(#6b8f1a));
   background: -webkit-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
   background:      -o-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #a5cd4e), to(#6b8f1a));
   background:         linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
   border-radius: 5px;
 }
@@ -603,12 +599,12 @@ nav {
   padding-top: 15px;
   padding-bottom: 10px;
   font-weight: normal;
-  color: #a8a8a8; 
+  color: #fff; 
   text-align: center;
 }
 
 .ui-datepicker-calendar td {
-  padding: 0 7px;
+  padding: 3px 7px;
   line-height: 26px; 
   text-align: center;
 }
@@ -619,8 +615,8 @@ nav {
 
 .ui-datepicker-calendar .ui-state-default {
   display: block;
-  width: 26px;
-  color: #a8a8a8;
+  width: 45px;
+  color: #fff;
   text-decoration: none;
   border: 1px solid transparent; 
   outline: none;
@@ -829,15 +825,16 @@ img.video-img {
 
 .news-home {
   font-family: 'Lato', sans-serif;
+  border: 1px solid #257e25;
 }
 .news-home .title h3 {
   padding: 3px; 
-  font-size: 30px;
-  line-height: 1.433;
+  padding-left: 10px;
+  font-size: 23px;
+  line-height: 2;
   color: white;
-  text-align: center;
   text-transform: uppercase;
-  background-color: #82ca9c;
+  background-color: #257e25;
 }
 @media (max-width: 575px) {
   .news-home .title h3 {
@@ -852,6 +849,7 @@ img.video-img {
   padding: 5px 0 5px 10px;
 }
 .news-home ul li a {
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 1.792;
   color: #777;
@@ -1176,6 +1174,7 @@ header .header-logo {
 }
 header h1 {
   display: inline-block;
+  font-size: 2rem;
 }
 header input {
   outline: none;
@@ -1292,8 +1291,9 @@ footer .logo img {
 }
 footer .btn-report {
   color: #fff;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   background-color: #257e25;
+  border-radius: 0;
 }
 @media (max-width: 575px) {
   footer .btn-report {
@@ -1337,22 +1337,24 @@ footer hr {
   border-top: 1px solid #999;
 }
 
+#report .modal-dialog .modal-content {
+  border-radius: 0;
+}
 #report .modal-dialog .modal-content .modal-body form .input-group {
   margin-bottom: 20px;
 }
 #report .modal-dialog .modal-content .modal-body form .input-group .form-control {
   border-radius: 0;
 }
-
 #report .modal-dialog .modal-content .modal-body form textarea.form-control {
   min-height: 150px;
   border-radius: 0;
 }
-
 #report .modal-dialog .modal-content .modal-body form button {
   width: 150px;
   height: 50px;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 #speech-full {
